@@ -2,14 +2,18 @@
    <div class="module-1">
 			<div class="module-line">
 				<div class="module-1-1">
+					<router-link to="/Collect">
 					<img src="../../assets/imgs/Myis/pic1.png" alt="">
 					<p class="collect">收藏店铺</p>
 					<p class="collect-num">0个店铺</p>
+					</router-link>
 				</div>
 				<div class="module-1-1">
+					<router-link to="/Balance">
 					<img src="../../assets/imgs/Myis/pic-2.png" alt="">
 					<p class="collect">外卖钱包</p>
 					<p class="collect-num">支付设置</p>
+					</router-link>
 				</div>
 				<div class="module-1-1">
 					<img src="../../assets/imgs/Myis/pic3.png" alt="">

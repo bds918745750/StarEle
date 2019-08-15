@@ -3,9 +3,12 @@
 			<div class="nav-box1">
 				<div class="set">
 					<img src="../../assets/imgs/Myis/icon-1.png" alt="" class="set-img1">
+					<router-link to="/Options">
 					<img src="../../assets/imgs/Myis/icon-2.png" alt="" class="set-img2">
+					</router-link>
 				</div>
 			</div>
+		<router-link to="/UserControl">
 			<div class="head">
 				<div class="head-lef">
 					<h3>37sds2</h3>
@@ -15,6 +18,7 @@
 					<img src="../../assets/imgs/Myis/icon-3.png">
 				</div>
 			</div>
+		</router-link>
 			<div class="VIP">
 				<div class="super">
 					<h4 class="super-H">超级会员</h4>

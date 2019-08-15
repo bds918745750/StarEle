@@ -93,7 +93,7 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;	
-	margin-top: 0.18rem;
+	padding-top: 0.18rem;
 }
 .module-1-1{
 	width:0.66rem;
@@ -119,7 +119,7 @@
 }
 .red-packet-line{
 	width:3.44rem;
-	margin:0.15rem auto;
+	padding:0.01rem 0.15rem;
 	display: flex;
 	justify-content: space-between;
 	background: #FFFFFF;
@@ -174,12 +174,13 @@
 	display: flex;
 	justify-content: space-between;
 	background: #f9f9f9;
-	margin-top: 0.2rem;
+	margin-top: 0.1rem;
 	border-radius: 0.05rem;
 	line-height:0.335rem ;
 }
 .more .card{
-	font-size:0.15rem ;
+	font-size:0.12rem ;
+	margin-left: 10px;
 }
 .more .card-all{
 	font-size:0.12rem;
@@ -192,7 +193,7 @@
 }
 .tool-1{
 	width:3.44rem;
-	margin:0.15rem auto;
+	padding:0.1rem 0.12rem;
 	display: flex;
 	justify-content: space-between;
 	background: #FFFFFF;
@@ -206,4 +207,5 @@
 	text-align: center;
 	color: #AAAAAA;
 	font-size: 12px;
+	background-color: #fff;
 }
