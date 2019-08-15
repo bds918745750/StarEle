@@ -1,6 +1,6 @@
 /* header */
 header{
-	background-image: url("imgs/header.png");
+	background-image: url("imgs/Homepage/header.png");
 	height:2.76rem;
 	background-size:cover;
 	padding: 0px 10px;
@@ -340,28 +340,5 @@ nav a span{
 	border-radius: 2px;
 }
 
-/* footer */
 
-footer{
-	background: #fff;
-	display: flex;
-	justify-content:space-around;
-	padding: 10px;
-}
-
-footer a{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-footer a img{
-	width: 0.26rem;
-	height: 0.24rem;
-	margin-bottom: 5px;
-}
-
-footer a span{
-	font-size: 0.01rem;
-}
 

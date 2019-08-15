@@ -1,30 +1,33 @@
 <template>
     <footer>
-            <a href="javaScript:;">
+            <router-link to="/" >
                 <img src="../../assets/imgs/footer/footer-1.png">
                 <span>首页</span>
-            </a>
-            <a href="javaScript:;">
+            </router-link> 
+             <router-link to="/Guide" >
                 <img src="../../assets/imgs/footer/footer-2.png">
                 <span>指南</span>
-            </a>
-            <a href="javaScript:;">
+            </router-link>
+            <router-link to="/Order" >
                 <img src="../../assets/imgs/footer/footer-3.png">
                 <span>订单</span>
-            </a>
-            <a href="javaScript:;">
+           </router-link>
+            <router-link to="/Myis" >
                 <img src="../../assets/imgs/footer/footer-4.png">
                 <span>我的</span>
-            </a>
+            </router-link>
         </footer>
     </template>
 
 <script>
 
-
     export default {
         name:"SFooter",
-        
+        data() {
+            return {
+                
+            }
+        },
 
     }
 </script>
@@ -37,9 +40,10 @@ footer{
 	display: flex;
 	justify-content:space-around;
     padding: 10px 0;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 100;
 }
 
 footer a{

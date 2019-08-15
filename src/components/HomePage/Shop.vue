@@ -2,7 +2,7 @@
    <div class="ShopDet">
     <div class="ShopDet_left">
       <span>星选好店</span>
-      <img src="../../assets/imgs/Shop_logo/小六汤包(高新南路).png" />
+      <img src="../../assets/imgs/Homepage/Shop_logo/小六汤包(高新南路).png" />
     </div>
 
     <div class="ShopDet_content">
@@ -30,7 +30,7 @@
 
       <div class="ShopDet_type">
         <a href="javaScript:;">
-          <img src="../../assets/imgs/Shop_logo/Shop-1.png" />
+          <img src="../../assets/imgs/Homepage/Shop_logo/Shop-1.png" />
           <span>包子</span>
         </a>
         <span>好吃到哭的黑椒蜜豆炒牛柳</span>

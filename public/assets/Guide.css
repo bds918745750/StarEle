@@ -1,0 +1,202 @@
+	/* header	----------------- */
+	.guideHeader{
+		width: 100%;
+		height: .39rem;
+		text-align: center;
+		line-height: .39rem;
+		font-size: .15rem;
+		font-weight: 600;
+	}
+	.guideHeader img{
+		width: .2rem;
+		height: .2rem;
+	 	float: right;
+		margin-top: .1rem;
+		margin-right: .15rem;
+	}
+	
+	
+	/* 公共-------------------- */
+	.guidePublic{
+		display: flex;
+		justify-content: space-between;
+		padding: .23rem .15rem .17rem .15rem;
+	}
+	.texte{
+		font-size: .17rem;
+		font-weight: 600;
+	}
+	.moreM{
+		font-size: .13rem;
+	}
+	
+	
+	/* 大家都在吃-------------- */
+	.guideNav{
+		padding:0 .15rem;
+		display: -webkit-flex;
+		margin-bottom: .09rem;
+		background: #f8f8f8;
+	}
+	.guideNav-first{
+		margin-right: .15rem;
+		float: left;
+		box-shadow: 0 0 1px gray;
+		border-radius: 10px;
+	}
+	.showsPicture{
+		width: 1.57rem;
+		height: 1.52rem;		
+		border-top-left-radius: 5px;
+		border-top-right-radius: 5px;
+	}
+	.showTxmod{
+		padding: 0 .1rem;
+	}
+	.showTxmod span{
+		font-size: .14rem;
+		font-weight: 600;
+		display: block;
+		margin-top: .06rem;
+		margin-bottom: .045rem;
+	}
+	.showTxmod p{
+		font-size: .11rem;
+	}
+	.guideNav-price{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: .05rem;
+		margin-bottom: .04rem;
+	}
+	.guideNav-price strong{
+		font-size: .16rem;
+		display: block;
+	}
+	.guideNav-price del {
+		color: #888888;
+		font-size: 11px;
+		float: left;
+		margin-top: .02rem;
+	}
+	.guideNav-contour{
+		padding: .12rem .14rem;
+		border-radius: 5px;
+		background: red;
+	}
+	
+	
+	/* 发现你的菜-------------- */
+	.guideFind{
+		padding:0 .15rem;
+		display: -webkit-flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: .09rem;
+		background: #f8f8f8;
+	}
+	.guideFind-second{
+		float: left;
+		box-shadow: 0 0 1px gray;
+		border-radius: 10px;		
+		margin-bottom: .14rem;
+	}
+	.guideFind-second .showsPicture{
+		width: 1.65rem;
+		height: 1.52rem;		
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	.showTxmod{
+		padding: 0 .1rem;
+	}
+	.showTxmod span{
+		font-size: .14rem;
+		font-weight: 600;
+		display: block;
+		margin-top: .06rem;
+		margin-bottom: .045rem;
+	}
+	.guideFind .showTxmod p{
+		font-size: .12rem;
+	}
+	.guideFind-price{
+		display: flex;
+		align-items: center;
+		margin-top: .05rem;
+		padding-bottom: .1rem;
+		border-bottom: 1px solid gray;
+	}
+	.guideFind-price strong{
+		font-size: .16rem;
+		display: block;
+		margin-right: .02rem;
+	}
+	.guideFind-price del {
+		color: #888888;
+		font-size: 11px;
+		float: left;
+		margin-top: .02rem;
+		margin-right: .02rem;
+	}
+	.guideFind-price p{
+		font-size: 10px;
+
+	}
+	.guideFind-contour{
+		padding: .06rem .07rem;
+		border: 1px solid red;
+		color: red;
+		padding-bottom: .1rem;
+	}
+	.guideFind-address{
+		margin-top: .05rem;
+		margin-bottom: .05rem;
+	}
+	.guideFind-address img{
+		float: left;
+		margin-right: .05rem;
+	}
+	
+	
+	/* 精彩文章 --------------------*/
+	.guideSplendid{
+		padding:0 .15rem;
+	}
+	.guideSplendid-title{
+		display: flex;
+		justify-content: space-between;
+		padding: .23rem 0 .16rem 0;
+	}
+	.guideSplendid-article{
+		margin-bottom: .2rem;
+	}
+	.guideSplendid-article .showsPicture{
+		width: 1.3rem;
+		height: 0.85rem;
+		border-radius: 5px;
+		margin-right: .08rem;
+		float: left;
+	}
+	.guideSplendid-article span{
+		font-size: .14rem;
+		font-weight: 600;
+		display: block;
+		margin-bottom: .019rem;
+		letter-spacing: .02rem;
+
+	}
+	.guideSplendid-article p{
+		font-size: .1rem;
+		margin-top: .15rem;
+		margin-bottom: .07rem;
+	}
+	.guideSplendid-article img{
+		width: .12rem;
+		height: .1rem;
+	}
+	.guideSplendid-content{
+		display: flex;
+		flex-direction: column;
+	}
