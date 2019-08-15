@@ -16,6 +16,9 @@ import UserControl from '../views/MyisChild/UserControl.vue';
 import Collect from '../views/MyisChild/Collect.vue';
 import Balance from '../views/MyisChild/Balance.vue';
 
+// 首页子页面
+import EatNat from '../views/HomePageChild/EatNat.vue';
+
 let router = new VueRouter({
     routes:[
         {
@@ -49,6 +52,10 @@ let router = new VueRouter({
 		{
 			path:"/Balance",
 			component:Balance,
+        },
+        {  //测试非吃不可路由
+			path:"/EatNat",
+			component:EatNat,
 		},
     ]
 })
