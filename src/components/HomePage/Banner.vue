@@ -3,13 +3,13 @@
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <img src="../../assets/imgs/banner/未标题-1.png" />
+          <img src="../../assets/imgs/Homepage/banner/未标题-1.png" />
         </div>
         <div class="swiper-slide">
-          <img src="../../assets/imgs/banner/未标题-1.png" />
+          <img src="../../assets/imgs/Homepage/banner/未标题-1.png" />
         </div>
         <div class="swiper-slide">
-          <img src="../../assets/imgs/banner/未标题-1.png" />
+          <img src="../../assets/imgs/Homepage/banner/未标题-1.png" />
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@
         <a href="javaScript:;">距离</a>
         <a href="javaScript:;">心选</a>
       </div>
-      <ele-homepage-shopList></ele-homepage-shopList>
+      <ele-Homepage-shopList></ele-Homepage-shopList>
     </div>
   </div>
 </template>
@@ -18,7 +18,7 @@ import ShopList from "./ShopList";
 export default {
   name: "SeleShop",
   components: {
-    "ele-homepage-shopList": ShopList
+    "ele-Homepage-shopList": ShopList
   }
 };
 </script>

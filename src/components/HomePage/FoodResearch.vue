@@ -5,45 +5,45 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="plate_second_top">
-                        <img src="../../assets/imgs/plate_second/one-1.png">
+                        <img src="../../assets/imgs/Homepage/plate_second/one-1.png">
                     </div>
                     <div class="plate_second_bottom">
                         <a href="javaScript:;">
-                            <img src="../../assets/imgs/plate_second/two-1.png">
+                            <img src="../../assets/imgs/Homepage/plate_second/two-1.png">
                             <span>川魂帽牌货冒菜(万柯金域国际店)</span>
                         </a>
                         <a href="javaScript:;">
-                            <img src="../../assets/imgs/plate_second/two-1.png">
+                            <img src="../../assets/imgs/Homepage/plate_second/two-1.png">
                             <span>川魂帽牌货冒菜(万柯金域国际店)</span>
                         </a>
                         <a href="javaScript:;">
-                            <img src="../../assets/imgs/plate_second/two-1.png">
+                            <img src="../../assets/imgs/Homepage/plate_second/two-1.png">
                             <span>川魂帽牌货冒菜(万柯金域国际店)</span>
                         </a>
                         <a href="javaScript:;">
-                            <img class="plate_second_bottom_move" src="../../assets/imgs/plate_second/move.png">
+                            <img class="plate_second_bottom_move" src="../../assets/imgs/Homepage/plate_second/move.png">
                         </a>
                     </div>
                 </div>
                 <div class="swiper-slide">
                     <div class="plate_second_top">
-                        <img src="../../assets/imgs/plate_second/one-2.png">
+                        <img src="../../assets/imgs/Homepage/plate_second/one-2.png">
                     </div>
                     <div class="plate_second_bottom">
                         <a href="javaScript:;">
-                            <img src="../../assets/imgs/plate_second/two-1.png">
+                            <img src="../../assets/imgs/Homepage/plate_second/two-1.png">
                             <span>川魂帽牌货冒菜(万柯金域国际店)</span>
                         </a>
                         <a href="javaScript:;">
-                            <img src="../../assets/imgs/plate_second/two-1.png">
+                            <img src="../../assets/imgs/Homepage/plate_second/two-1.png">
                             <span>川魂帽牌货冒菜(万柯金域国际店)</span>
                         </a>
                         <a href="javaScript:;">
-                            <img src="../../assets/imgs/plate_second/two-1.png">
+                            <img src="../../assets/imgs/Homepage/plate_second/two-1.png">
                             <span>川魂帽牌货冒菜(万柯金域国际店)</span>
                         </a>
                         <a href="javaScript:;">
-                            <img class="plate_second_bottom_move" src="../../assets/imgs/plate_second/move.png">
+                            <img class="plate_second_bottom_move" src="../../assets/imgs/Homepage/plate_second/move.png">
                         </a>
                     </div>
                 </div>
