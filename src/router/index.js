@@ -16,6 +16,10 @@ import UserControl from '../views/MyisChild/UserControl.vue';
 import Collect from '../views/MyisChild/Collect.vue';
 import Balance from '../views/MyisChild/Balance.vue';
 
+
+//指南的子页面
+import delicious from '../views/GuideChild/delicious.vue';
+
 let router = new VueRouter({
     routes:[
         {
@@ -45,11 +49,17 @@ let router = new VueRouter({
 		{
 			path:"/Collect",
 			component:Collect,
-			},
+		},
 		{
 			path:"/Balance",
 			component:Balance,
+		},	
+		//指南二级
+		{
+			path:"/delicious",
+			component:delicious,
 		},
+		
     ]
 })
 
