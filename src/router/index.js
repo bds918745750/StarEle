@@ -10,11 +10,22 @@ import Guide from '../views/Guide.vue';
 import Order from '../views/Order.vue';
 //我的模块
 import Myis from '../views/Myis.vue';
-// 我的子页面
+// 我的 子页面
 import Options from '../views/MyisChild/Options.vue';
 import UserControl from '../views/MyisChild/UserControl.vue';
 import Collect from '../views/MyisChild/Collect.vue';
 import Balance from '../views/MyisChild/Balance.vue';
+import Invite from '../views/MyisChild/Invite.vue';
+import Gather from '../views/MyisChild/Gather.vue';
+import Card from '../views/MyisChild/Card.vue';
+import Location from '../views/MyisChild/Location.vue';
+import Evaluate from '../views/MyisChild/Evaluate.vue';
+import Service from '../views/MyisChild/Service.vue';
+import Set from '../views/MyisChild/Set.vue';
+// 我的 登录前页面
+import BeforeLogin from '../views/Myisbefore/BeforeLogin.vue';
+
+
 
 // 首页子页面
 import EatNat from '../views/HomePageChild/EatNat.vue';
@@ -37,6 +48,7 @@ let router = new VueRouter({
             path:"/Order",
             component:Order
         },
+		// 我的子页面
 		{
 			path:"/UserControl",
 			component:UserControl,
@@ -57,7 +69,40 @@ let router = new VueRouter({
 			path:"/EatNat",
 			component:EatNat,
 		},
+		{
+			path:"/Invite",
+			component:Invite,
+		},
+		{
+			path:"/Gather",
+			component:Gather,
+		},
+		{
+			path:"/Card",
+			component:Card,
+		},
+		{
+			path:"/Evaluate",
+			component:Evaluate,
+		},
+		{
+			path:"/Location",
+			component:Location,
+		},
+		{
+			path:"/Service",
+			component:Service,
+		},
+		{
+			path:"/Set",
+			component:Set,
+		},
+		// 我的登录前页面
+		{
+			path:"/BeforeLogin",
+			component:BeforeLogin,
+		},
     ]
 })
 
-export default router;
+export default router

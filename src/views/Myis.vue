@@ -1,20 +1,20 @@
 <template>
     <div class="Myis">
-        <ele-My-Mherader></ele-My-Mherader>
-        <ele-My-Menu></ele-My-Menu> 
-        <ele-My-RedPacket></ele-My-RedPacket>   
-        <ele-My-Tool></ele-My-Tool>
-        <ele-My-Regular></ele-My-Regular>
-        <ele-My-Footer></ele-My-Footer>
+        <ele-Myis-Mherader></ele-Myis-Mherader>
+        <ele-Myis-Menu></ele-Myis-Menu> 
+        <ele-Myis-RedPacket></ele-Myis-RedPacket>   
+        <ele-Myis-Tool></ele-Myis-Tool>
+        <ele-Myis-Regular></ele-Myis-Regular>
+        <ele-Myis-Footer></ele-Myis-Footer>
     </div>
 </template>
 
 <script>
-    import Mherader from "../components/My/Mheader";
-    import Menu from "../components/My/Menu";
-    import RedPacket from "../components/My/RedPacket";
-    import Tool from "../components/My/Tool";
-    import Regular from "../components/My/Regular";
+    import Mherader from "../components/Myis/Mheader";
+    import Menu from "../components/Myis/Menu";
+    import RedPacket from "../components/Myis/RedPacket";
+    import Tool from "../components/Myis/Tool";
+    import Regular from "../components/Myis/Regular";
     import Footer from "../components/common/Footer";
 
 
@@ -22,12 +22,12 @@
 export default {
     name:"Myis",
     components: {
-    "ele-My-Mherader": Mherader,
-    "ele-My-Menu": Menu,
-    "ele-My-RedPacket": RedPacket,
-    "ele-My-Tool": Tool,
-    "ele-My-Regular": Regular,
-    "ele-My-Footer": Footer,
+    "ele-Myis-Mherader": Mherader,
+    "ele-Myis-Menu": Menu,
+    "ele-Myis-RedPacket": RedPacket,
+    "ele-Myis-Tool": Tool,
+    "ele-Myis-Regular": Regular,
+    "ele-Myis-Footer": Footer,
   },
 }
 </script>
