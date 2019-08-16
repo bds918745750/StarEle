@@ -1,9 +1,11 @@
 <template>
     <div class="red-packet">
+		<router-link to="/Card">
 			<div class="red-packet-line">
 				<p class="card">红包卡券</p>
 				<p class="card-all">查看全部券 ＞</p>
 			</div>
+		</router-link>
 			<div class="red-packet-line">
 				<div class="cash">
 					<div class="cash-small">
@@ -31,15 +33,14 @@
 					</div>
 				</div>
 			</div>
+			<router-link to="/Card">
 			<div class="more">
 				<p class="card">更多好券，去领券中心看看 </p>
 				<p class="card-all"> ＞</p>
 			</div>
+			</router-link>
 		</div>
 </template>
-
-
-
 <script>
 export default {
     name:"RedPacket",
