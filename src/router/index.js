@@ -16,6 +16,12 @@ import UserControl from '../views/MyisChild/UserControl.vue';
 import Collect from '../views/MyisChild/Collect.vue';
 import Balance from '../views/MyisChild/Balance.vue';
 
+
+//首页子页面
+import Fitness from '../views/HomePageChild/Fitness.vue';
+import MoneyOff from '../views/HomePageChild/MoneyOff.vue';
+
+
 let router = new VueRouter({
     routes:[
         {
@@ -49,7 +55,17 @@ let router = new VueRouter({
 		{
 			path:"/Balance",
 			component:Balance,
-		},
+        },
+        //首页子页面注册
+        {
+			path:"/Fitness",
+			component:Fitness,
+        },
+        {
+			path:"/MoneyOff",
+			component:MoneyOff,
+        },
+        //H------------------
     ]
 })
 

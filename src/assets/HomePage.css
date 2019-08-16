@@ -236,6 +236,9 @@ nav a span{
 	/* justify-content: space-between; */
 	font-size: 13px;
 	margin-bottom: 15px;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 5px 5px;
 }
 
 
@@ -324,6 +327,7 @@ nav a span{
 	margin-right: 11px;
 }
 
+
 .ShopDet_type a img{
 	width:0.11rem;
 	height:0.11rem;
@@ -332,6 +336,7 @@ nav a span{
 }
 .ShopDet_type {
 	margin-bottom: 5px;
+
 }
 
 .activety li{
