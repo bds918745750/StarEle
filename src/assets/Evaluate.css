@@ -1,0 +1,125 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,input,textarea,select,td,th{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+ul,ol{
+	list-style: none;
+}
+html,body{
+	height: 100%;
+}
+body{
+	font-family: 微软雅黑;
+	display: -webkit-flex;
+	-webkit-flex-direction:column;
+}
+html{
+	font-size: 26.67vw;
+}
+img{
+	border: none;
+	display: block;
+}
+.evaluate-header{
+	height: .46rem;
+	background: #F5DEB3;
+}
+.threeMode{
+	display: flex;
+}
+.threeMode a{
+	font-size: .18rem;
+	/* margin-right: 0.62rem; */
+	color: black;
+}
+.threeMode a:hover{
+	padding-bottom: .1rem;
+	border-bottom: 1px solid red;
+}
+
+.grade{
+	padding: .23rem 0;
+	display: flex;
+	align-items: center;
+}
+
+
+.score{
+	font-size: .38rem;
+	color: red;
+}
+.allGrades{
+	padding: 0  .34rem;
+	border-right: 1px solid gray;
+}
+.allGrades p{
+	font-size: .1rem;
+	color: #888888;
+	line-height: .28rem;
+}
+.delivery{
+	padding: 0 .38rem;
+}
+.delivery h2{
+	font-size: .22rem;
+}
+.delivery  p{
+	font-size: .1rem;
+	color: #888888;
+}
+.evaluateList{
+	display: flex;
+	flex-wrap: wrap;
+}
+.evaluateList a{
+	font-size: .13rem;
+	color: black;
+	padding: .05rem .05rem;
+	background: #A1A1A1;
+	border: 1px solid lightcyan;
+	border-radius: .13rem;
+	margin: .09rem .09rem 0 0;
+	text-align: center;
+}
+.evaluateList a:hover{
+	background: #B22222;
+	color: white;
+}
+
+/* //评价 */
+.eUser{
+	display: flex;
+	align-items: center;
+	margin-top: .15rem;
+}
+.evaluateDetail img{
+	width: .30rem;
+	height:.30rem;
+	margin-right: .3rem;
+}
+
+.useranddate h4{
+	font-size: .11rem;
+}
+.useranddate .date{
+	font-size: .1rem;
+	color: #CECED2;
+}
+.productRank h6{
+	font-size: .1rem;
+}
+.starRank{
+	display: flex;
+	margin-left: .47rem;
+}
+.productRank{
+	margin-right: .13rem;
+}
+.elessay{
+	font-size: .14rem;
+	line-height: .28rem;
+	margin-left: .47rem;
+}
