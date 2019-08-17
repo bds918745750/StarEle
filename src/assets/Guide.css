@@ -1,3 +1,34 @@
+	body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,input,textarea,select,td,th{
+		margin:0;
+		padding:0;
+	}
+	a{
+		text-decoration: none;
+		color: black;
+	}
+	ul,ol{
+		list-style: none;
+	}
+	html,body{
+		height: 100%;
+	}
+	
+	body{
+		font-family: 微软雅黑;
+		background-color:#f5f5f9;
+		/* padding: 0 .15rem; */
+		display: -webkit-flex;
+		-webkit-flex-direction:column;
+	}
+	html{
+		font-size: 26.67vw;
+	}
+	img{
+		border: none;
+		display: block;
+	}
+	
+	
 	/* header	----------------- */
 	.guideHeader{
 		width: 100%;
@@ -15,12 +46,16 @@
 		margin-right: .15rem;
 	}
 	
+	.guideSlide{
+		-webkit-flex: 1;
+		overflow-y: auto;
+	}
 	
 	/* 公共-------------------- */
 	.guidePublic{
 		display: flex;
 		justify-content: space-between;
-		padding: .23rem .15rem .17rem .15rem;
+		padding: .17rem .15rem;
 	}
 	.texte{
 		font-size: .17rem;
@@ -32,17 +67,25 @@
 	
 	
 	/* 大家都在吃-------------- */
-	.guideNav{
-		padding:0 .15rem;
+	/* .guideNavSection{
+		width: 100%;
 		display: -webkit-flex;
-		margin-bottom: .09rem;
-		background: #f8f8f8;
+	} */
+	
+	
+	.guideNav{
+		/* overflow: hidden; */
+		width: 100%;
+		display: flex;
+		overflow-x: auto;
+		/* padding: 0 .15rem; */
 	}
 	.guideNav-first{
-		margin-right: .15rem;
-		float: left;
+		margin-left: .15rem;
+		/* float: left; */
 		box-shadow: 0 0 1px gray;
 		border-radius: 10px;
+		flex-shrink: 0;
 	}
 	.showsPicture{
 		width: 1.57rem;
@@ -69,6 +112,12 @@
 		align-items: center;
 		margin-top: .05rem;
 		margin-bottom: .04rem;
+	}
+	.cacaca{
+		display: flex;
+		font-size: .14rem;
+		align-items: center;
+		font-weight: 600;
 	}
 	.guideNav-price strong{
 		font-size: .16rem;
@@ -199,4 +248,28 @@
 	.guideSplendid-content{
 		display: flex;
 		flex-direction: column;
+	}
+	
+	.guideFooter{
+		background: #fff;
+		display: flex;
+		justify-content:space-around;
+	    padding: 10px 0;
+	    width: 100%;
+	}
+	
+	.guideFooter a{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	
+	.guideFooter a img{
+		width: 0.26rem;
+		height: 0.24rem;
+		margin-bottom: 5px;
+	}
+	
+	.guideFooter a span{
+		font-size: 0.01rem;
 	}

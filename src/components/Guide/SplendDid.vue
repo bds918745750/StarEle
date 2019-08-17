@@ -4,7 +4,7 @@
       <span class="texte">精彩文章</span>
     </div>
 
-    <a href="#">
+    <router-link to="/delicious">
       <div class="guideSplendid-article">
         <img src="../../assets/imgs/Guide/img/3.jpg" class="showsPicture" />
         <div class="guideSplendid-content">
@@ -13,7 +13,7 @@
           <img src="../../assets/imgs/Guide/img/eyes.png" />
         </div>
       </div>
-    </a>
+    </router-link>
 
     <a href="#">
       <div class="guideSplendid-article">

@@ -21,6 +21,8 @@ import Balance from '../views/MyisChild/Balance.vue';
 import Fitness from '../views/HomePageChild/Fitness.vue';
 import MoneyOff from '../views/HomePageChild/MoneyOff.vue';
 
+//指南的子页面
+import delicious from '../views/GuideChild/delicious.vue';
 
 let router = new VueRouter({
     routes:[
@@ -51,7 +53,7 @@ let router = new VueRouter({
 		{
 			path:"/Collect",
 			component:Collect,
-			},
+		},
 		{
 			path:"/Balance",
 			component:Balance,
@@ -66,6 +68,13 @@ let router = new VueRouter({
 			component:MoneyOff,
         },
         //H------------------
+		
+		//指南二级
+		{
+			path:"/delicious",
+			component:delicious,
+		},
+		
     ]
 })
 
