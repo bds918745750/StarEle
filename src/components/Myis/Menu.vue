@@ -16,14 +16,18 @@
 					</router-link>
 				</div>
 				<div class="module-1-1">
+					<router-link to="/Invite">
 					<img src="../../assets/imgs/Myis/pic3.png" alt="">
 					<p class="collect">我要请客</p>
 					<p class="collect-num">今天我请客</p>
+					</router-link>					
 				</div>
 				<div class="module-1-1">
+					<router-link to="Gather">
 					<img src="../../assets/imgs/Myis/pic4.png" alt="">
 					<p class="collect">集点有礼</p>
 					<p class="collect-num">大额同享红包</p>
+					</router-link>
 				</div>
 			</div>
 		</div>

@@ -1,7 +1,7 @@
 <template >
 	<div class="Options-body">
-      <ele-Collect-Top3></ele-Collect-Top3>
-	  <ele-Collect-Favorite></ele-Collect-Favorite>
+      <ele-MyisChild-Collect-Top3></ele-MyisChild-Collect-Top3>
+	  <ele-MyisChild-Collect-Favorite></ele-MyisChild-Collect-Favorite>
 	</div>
 </template>
 
@@ -13,8 +13,8 @@
 	export default {
 	  name:"Options",
 	  components: {
-	    "ele-Collect-Top3": Top3,
-		"ele-Collect-Favorite": Favorite,
+	    "ele-MyisChild-Collect-Top3": Top3,
+		"ele-MyisChild-Collect-Favorite": Favorite,
 
 	}
 }

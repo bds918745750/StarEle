@@ -1,7 +1,7 @@
 <template >
 	<div class="Options-body">
-      <ele-UserControl-Top2></ele-UserControl-Top2>
-	  <ele-UserControl-Amend></ele-UserControl-Amend>
+      <ele-MyisChild-UserControl-Top2></ele-MyisChild-UserControl-Top2>
+	  <ele-MyisChild-UserControl-Amend></ele-MyisChild-UserControl-Amend>
 	</div>
 </template>
 
@@ -13,8 +13,8 @@
 	export default {
 	  name:"Options",
 	  components: {
-	    "ele-UserControl-Top2": Top2,
-		"ele-UserControl-Amend": Amend,
+	    "ele-MyisChild-UserControl-Top2": Top2,
+		"ele-MyisChild-UserControl-Amend": Amend,
 
 	}
 }

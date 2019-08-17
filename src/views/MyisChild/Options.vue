@@ -1,7 +1,7 @@
 <template >
 	<div class="Options-body">
-      <ele-Options-Header></ele-Options-Header>
-	  <ele-Options-Administer></ele-Options-Administer>
+      <ele-MyisChild-Options-Header></ele-MyisChild-Options-Header>
+	  <ele-MyisChild-Options-Administer></ele-MyisChild-Options-Administer>
 	</div>
 </template>
 
@@ -12,8 +12,8 @@
 	export default {
 	  name:"Options",
 	  components: {
-	    "ele-Options-Header": Header,
-		"ele-Options-Administer": Administer,
+	    "ele-MyisChild-Options-Header": Header,
+		"ele-MyisChild-Options-Administer": Administer,
 	}
 }
 </script>
