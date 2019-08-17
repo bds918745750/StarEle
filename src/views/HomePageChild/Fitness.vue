@@ -1,8 +1,7 @@
 <template>
   <div class="Fitiness">
     <ele-homepage-fitness-Fheader></ele-homepage-fitness-Fheader>
-    <ele-homepage-fitness-Ftext
-    ></ele-homepage-fitness-Ftext>
+    <ele-homepage-fitness-Ftext></ele-homepage-fitness-Ftext>
     <ele-homepage-fitness-Video></ele-homepage-fitness-Video>
     <ele-homepage-fitness-Coupon></ele-homepage-fitness-Coupon>
     <ele-homepage-fitness-Meal></ele-homepage-fitness-Meal>
