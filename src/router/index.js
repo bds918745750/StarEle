@@ -35,8 +35,11 @@ import Live from '../views/HomePageChild/Live.vue';
 import Gsou from '../views/HomePageChild/Gsou.vue';
 import Week from '../views/HomePageChild/Week.vue';
 import Hot from '../views/HomePageChild/Hot.vue';
+import Classify from '../views/HomePageChild/Classify.vue';
 
 
+
+import Address from '../views/HomePageChild/Address.vue';
 
 //指南的子页面
 import delicious from '../views/GuideChild/delicious.vue';
@@ -75,6 +78,26 @@ let router = new VueRouter({
 		{
 			path:"/Balance",
 			component:Balance,
+        },
+        //首页子页面注册
+        {
+			path:"/Fitness",
+			component:Fitness,
+        },
+        {
+			path:"/MoneyOff",
+			component:MoneyOff,
+        },
+		{
+			path:"/Address",
+			component:Address,
+		},
+        //H------------------
+		
+		//指南二级
+		{
+			path:"/delicious",
+			component:delicious,
 		},
 		{
 			path:"/Invite",
@@ -105,7 +128,6 @@ let router = new VueRouter({
 			component:Set,
 		},
 		// M----------------------
-
         //首页子页面注册
         {
 			path:"/Fitness",
@@ -124,6 +146,7 @@ let router = new VueRouter({
 			component:Gsou,
         },
         
+
 		{
 			path:"/Week",
 			component:Week,
@@ -132,8 +155,11 @@ let router = new VueRouter({
 			path:"/Hot",
 			component:Hot,
 		},
+        {
+			path:"/Classify",
+			component:Classify,
+        },
         //H------------------
-		
 		//指南二级
 		{
 			path:"/delicious",
