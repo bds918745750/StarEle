@@ -20,6 +20,9 @@ import Balance from '../views/MyisChild/Balance.vue';
 //首页子页面
 import Fitness from '../views/HomePageChild/Fitness.vue';
 import MoneyOff from '../views/HomePageChild/MoneyOff.vue';
+import Live from '../views/HomePageChild/Live.vue';
+import Gsou from '../views/HomePageChild/Gsou.vue';
+
 
 //指南的子页面
 import delicious from '../views/GuideChild/delicious.vue';
@@ -67,6 +70,15 @@ let router = new VueRouter({
 			path:"/MoneyOff",
 			component:MoneyOff,
         },
+        {
+			path:"/Live",
+			component:Live,
+        },
+        {
+			path:"/Gsou",
+			component:Gsou,
+        },
+        
         //H------------------
 		
 		//指南二级

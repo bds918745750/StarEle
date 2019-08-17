@@ -16,12 +16,12 @@
       <router-link to="/MoneyOff" class="margin_right">
         <img src="../../assets/imgs/Homepage/plate/two-2.png" />
       </router-link>
-      <a href="javaScript:;" class="margin_right">
+      <router-link to="/Live" class="margin_right">
         <img src="../../assets/imgs/Homepage/plate/two-3.png" />
-      </a>
-      <a href="javaScript:;">
+      </router-link>
+      <router-link to="/Gsou">
         <img src="../../assets/imgs/Homepage/plate/two-4.png" />
-      </a>
+      </router-link>
     </div>
   </div>
 </template>
