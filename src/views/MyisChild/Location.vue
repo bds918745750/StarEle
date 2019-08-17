@@ -1,7 +1,7 @@
 <template >
 	<div class="Options-body">
-      <ele-Location-Top8></ele-Location-Top8>
-	  <ele-Location-LocationPic></ele-Location-LocationPic>
+      <ele-MyisChild-Location-Top8></ele-MyisChild-Location-Top8>
+	  <ele-MyisChild-Location-LocationPic></ele-MyisChild-Location-LocationPic>
 	</div>
 </template>
 
@@ -12,8 +12,8 @@
 	export default {
 	  name:"Location",
 	  components: {
-	    "ele-Location-Top8": Top8,
-		"ele-Location-LocationPic": LocationPic,
+	    "ele-MyisChild-Location-Top8": Top8,
+		"ele-MyisChild-Location-LocationPic": LocationPic,
 	}
 }
 </script>

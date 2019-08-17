@@ -1,10 +1,10 @@
 <template >
 	<div class="Options-body">
-      <ele-Card-Top7></ele-Card-Top7>
-	  <ele-Card-CardName></ele-Card-CardName>
-	  <ele-Card-Cardlist></ele-Card-Cardlist>
-	  <ele-Card-Cardlist></ele-Card-Cardlist>
-	  <ele-Card-Cardlist></ele-Card-Cardlist>
+      <ele-MyisChild-Card-Top7></ele-MyisChild-Card-Top7>
+	  <ele-MyisChild-Card-CardName></ele-MyisChild-Card-CardName>
+	  <ele-MyisChild-Card-Cardlist></ele-MyisChild-Card-Cardlist>
+	  <ele-MyisChild-Card-Cardlist></ele-MyisChild-Card-Cardlist>
+	  <ele-MyisChild-Card-Cardlist></ele-MyisChild-Card-Cardlist>
 	</div>
 </template>
 
@@ -17,9 +17,9 @@
 	export default {
 	  name:"Options",
 	  components: {
-	    "ele-Card-Top7": Top7,
-		"ele-Card-CardName": CardName,
-		"ele-Card-Cardlist": Cardlist,
+	    "ele-MyisChild-Card-Top7": Top7,
+		"ele-MyisChild-Card-CardName": CardName,
+		"ele-MyisChild-Card-Cardlist": Cardlist,
 
 	}
 }

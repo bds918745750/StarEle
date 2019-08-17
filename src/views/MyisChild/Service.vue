@@ -1,11 +1,11 @@
 <template >
 	<div class="Options-body">
-      <ele-Service-Top10></ele-Service-Top10>
+      <ele-MyisChild-Service-Top10></ele-MyisChild-Service-Top10>
 	  <div class="rolling">
-	  <ele-Service-Star></ele-Service-Star>
-	  <ele-Service-Title></ele-Service-Title>
+	  <ele-MyisChild-Service-Star></ele-MyisChild-Service-Star>
+	  <ele-MyisChild-Service-Title></ele-MyisChild-Service-Title>
 	  </div>
-	  <ele-Service-Footer></ele-Service-Footer>
+	  <ele-MyisChild-Service-Footer></ele-MyisChild-Service-Footer>
 	</div>
 </template>
 
@@ -19,10 +19,10 @@
 	export default {
 	  name:"Options",
 	  components: {
-	    "ele-Service-Top10": Top10,
-		"ele-Service-Star": Star,
-		"ele-Service-Title": Title,
-		"ele-Service-Footer":Footer,
+	    "ele-MyisChild-Service-Top10": Top10,
+		"ele-MyisChild-Service-Star": Star,
+		"ele-MyisChild-Service-Title": Title,
+		"ele-MyisChild-Service-Footer":Footer,
 		
 	}
 }

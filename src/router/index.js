@@ -31,6 +31,10 @@ import BeforeLogin from '../views/Myisbefore/BeforeLogin.vue';
 //首页子页面
 import Fitness from '../views/HomePageChild/Fitness.vue';
 import MoneyOff from '../views/HomePageChild/MoneyOff.vue';
+import Week from '../views/HomePageChild/Week.vue';
+import Hot from '../views/HomePageChild/Hot.vue';
+
+
 
 //指南的子页面
 import delicious from '../views/GuideChild/delicious.vue';
@@ -69,24 +73,7 @@ let router = new VueRouter({
 		{
 			path:"/Balance",
 			component:Balance,
-        },
-        //首页子页面注册
-        {
-			path:"/Fitness",
-			component:Fitness,
-        },
-        {
-			path:"/MoneyOff",
-			component:MoneyOff,
-        },
-        //H------------------
-		
-		//指南二级
-		{
-			path:"/delicious",
-			component:delicious,
 		},
-<<<<<<< HEAD
 		{
 			path:"/Invite",
 			component:Invite,
@@ -115,14 +102,39 @@ let router = new VueRouter({
 			path:"/Set",
 			component:Set,
 		},
+		// M----------------------
+
+        //首页子页面注册
+        {
+			path:"/Fitness",
+			component:Fitness,
+        },
+        {
+			path:"/MoneyOff",
+			component:MoneyOff,
+		},
+		{
+			path:"/Week",
+			component:Week,
+		},
+		{
+			path:"/Hot",
+			component:Hot,
+		},
+        //H------------------
+		
+		//指南二级
+		{
+			path:"/delicious",
+			component:delicious,
+		},
+
 		// 我的登录前页面
 		{
 			path:"/BeforeLogin",
 			component:BeforeLogin,
 		},
-=======
 		
->>>>>>> 956d39f43e2f6464506bfbb303c822b15d2e1945
     ]
 })
 

@@ -2,12 +2,14 @@
   <div class="plate">
     <h2>吃货种草机</h2>
     <div class="plate_one">
-      <a class="plate_one_right" href="javaScript:;">
+     
+      <router-link to="/Week" class="plate_one_right">
         <img src="../../assets/imgs/Homepage/plate/one-1.png" />
-      </a>
-      <a href="javaScript:;">
+      </router-link>
+
+      <router-link to="/Hot">
         <img src="../../assets/imgs/Homepage/plate/one-2.png" />
-      </a>
+      </router-link>
     </div>
     <div class="plate_two">
       <router-link to="/Fitness" class="margin_right">

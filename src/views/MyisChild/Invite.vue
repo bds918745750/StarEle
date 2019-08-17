@@ -1,9 +1,9 @@
 <template >
 	<div class="Options-body">
-      <ele-Invite-Top5></ele-Invite-Top5>
-	  <ele-Invite-InviteName></ele-Invite-InviteName>
-	  <ele-Invite-InviteBanner></ele-Invite-InviteBanner>
-	  <ele-Invite-InviteBtn></ele-Invite-InviteBtn>
+      <ele-MyisChild-Invite-Top5></ele-MyisChild-Invite-Top5>
+	  <ele-MyisChild-Invite-InviteName></ele-MyisChild-Invite-InviteName>
+	  <ele-MyisChild-Invite-InviteBanner></ele-MyisChild-Invite-InviteBanner>
+	  <ele-MyisChild-Invite-InviteBtn></ele-MyisChild-Invite-InviteBtn>
 	</div>
 </template>
 
@@ -18,10 +18,10 @@
 	export default {
 	  name:"Invite",
 	  components: {
-		"ele-Invite-Top5":Top5,
-		"ele-Invite-InviteName":InviteName,
-		"ele-Invite-InviteBanner":InviteBanner,
-		"ele-Invite-InviteBtn":InviteBtn,
+		"ele-MyisChild-Invite-Top5":Top5,
+		"ele-MyisChild-Invite-InviteName":InviteName,
+		"ele-MyisChild-Invite-InviteBanner":InviteBanner,
+		"ele-MyisChild-Invite-InviteBtn":InviteBtn,
 	},
 	mounted(){
 	var swiper = new Swiper('.swiper-container', {

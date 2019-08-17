@@ -1,11 +1,11 @@
 <template>
     <div class="Options-body">
-        <ele-BeforeLogin-Nav></ele-BeforeLogin-Nav>
-        <ele-BeforeLogin-FourModule></ele-BeforeLogin-FourModule> 
-        <ele-BeforeLogin-Tool></ele-BeforeLogin-Tool>   
-        <ele-BeforeLogin-Roule></ele-BeforeLogin-Roule>
+        <ele-Myisbefore-BeforeLogin-Nav></ele-Myisbefore-BeforeLogin-Nav>
+        <ele-Myisbefore-BeforeLogin-FourModule></ele-Myisbefore-BeforeLogin-FourModule> 
+        <ele-Myisbefore-BeforeLogin-Tool></ele-Myisbefore-BeforeLogin-Tool>   
+        <ele-Myisbefore-BeforeLogin-Roule></ele-Myisbefore-BeforeLogin-Roule>
         <!-- <ele-BeforeLogin-Null></ele-BeforeLogin-Null> -->
-		<ele-BeforeLogin-Footer></ele-BeforeLogin-Footer>
+		<ele-Myisbefore-BeforeLogin-Footer></ele-Myisbefore-BeforeLogin-Footer>
     </div>
 </template>
 
@@ -23,12 +23,12 @@
 export default {
     name:"BeforeLogin",
     components: {
-    "ele-BeforeLogin-Nav": Nav,
-    "ele-BeforeLogin-FourModule": FourModule,
-    "ele-BeforeLogin-Roule": Roule,
-    "ele-BeforeLogin-Tool": Tool,
+    "ele-Myisbefore-BeforeLogin-Nav": Nav,
+    "ele-Myisbefore-BeforeLogin-FourModule": FourModule,
+    "ele-Myisbefore-BeforeLogin-Roule": Roule,
+    "ele-Myisbefore-BeforeLogin-Tool": Tool,
     // "ele-BeforeLogin-Null": Null,
-	"ele-BeforeLogin-Footer": Footer,
+	"ele-Myisbefore-BeforeLogin-Footer": Footer,
   },
 }
 </script>

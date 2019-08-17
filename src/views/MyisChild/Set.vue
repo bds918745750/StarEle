@@ -1,7 +1,7 @@
 <template >
 	<div class="Options-body">
-      <ele-Set-Top11></ele-Set-Top11>
-	  <ele-Set-SetRules></ele-Set-SetRules>
+      <ele-MyisChild-Set-Top11></ele-MyisChild-Set-Top11>
+	  <ele-MyisChild-Set-SetRules></ele-MyisChild-Set-SetRules>
 	</div>
 </template>
 
@@ -12,8 +12,8 @@
 	export default {
 	  name:"Set",
 	  components: {
-	    "ele-Set-Top11": Top11,
-		"ele-Set-SetRules": SetRules,
+	    "ele-MyisChild-Set-Top11": Top11,
+		"ele-MyisChild-Set-SetRules": SetRules,
 	}
 }
 </script>

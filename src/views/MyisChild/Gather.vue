@@ -1,7 +1,7 @@
 <template >
 	<div class="Options-body">
-      <ele-Gather-Top6></ele-Gather-Top6>
-	  <ele-Gather-Activity></ele-Gather-Activity>
+      <ele-MyisChild-Gather-Top6></ele-MyisChild-Gather-Top6>
+	  <ele-MyisChild-Gather-Activity></ele-MyisChild-Gather-Activity>
 	</div>
 </template>
 
@@ -12,8 +12,8 @@
 	export default {
 	  name:"Gather",
 	  components: {
-	    "ele-Gather-Top6": Top6,
-		"ele-Gather-Activity": Activity,
+	    "ele-MyisChild-Gather-Top6": Top6,
+		"ele-MyisChild-Gather-Activity": Activity,
 	}
 }
 </script>

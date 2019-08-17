@@ -1,7 +1,7 @@
 <template >
 	<div class="Options-body">
-      <ele-Evaluate-Top9></ele-Evaluate-Top9>
-	  <ele-Evaluate-EvaluatePic></ele-Evaluate-EvaluatePic>
+      <ele-MyisChild-Evaluate-Top9></ele-MyisChild-Evaluate-Top9>
+	  <ele-MyisChild-Evaluate-EvaluatePic></ele-MyisChild-Evaluate-EvaluatePic>
 	</div>
 </template>
 
@@ -13,8 +13,8 @@
 	export default {
 	  name:"Options",
 	  components: {
-	    "ele-Evaluate-Top9": Top9,
-		"ele-Evaluate-EvaluatePic": EvaluatePic,
+	    "ele-MyisChild-Evaluate-Top9": Top9,
+		"ele-MyisChild-Evaluate-EvaluatePic": EvaluatePic,
 
 	}
 }

@@ -1,7 +1,7 @@
 <template >
 	<div class="Options-body">
-      <ele-Balance-Top4></ele-Balance-Top4>
-	  <ele-Balance-Money></ele-Balance-Money>
+      <ele-MyisChild-Balance-Top4></ele-MyisChild-Balance-Top4>
+	  <ele-MyisChild-Balance-Money></ele-MyisChild-Balance-Money>
 	</div>
 </template>
 
@@ -12,8 +12,8 @@
 	export default {
 	  name:"Balance",
 	  components: {
-	    "ele-Balance-Top4": Top4,
-		"ele-Balance-Money": Money,
+	    "ele-MyisChild-Balance-Top4": Top4,
+		"ele-MyisChild-Balance-Money": Money,
 	}
 }
 </script>
