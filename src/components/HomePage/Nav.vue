@@ -4,11 +4,10 @@
             <img src="../../assets/imgs/Homepage/nav-icon/1.png">
             <span>餐饮</span>
         </a>
-        <router-link to="/EatNat">
-        <!-- 测试 -->
+        <a href="javaScript:;">
             <img src="../../assets/imgs/Homepage/nav-icon/2.png">
             <span>星选商家</span>
-        </router-link>
+        </a>
         <a href="javaScript:;">
             <img src="../../assets/imgs/Homepage/nav-icon/3.png">
             <span>会员专享</span>

@@ -27,9 +27,6 @@ import BeforeLogin from '../views/Myisbefore/BeforeLogin.vue';
 
 
 
-// 首页子页面
-import EatNat from '../views/HomePageChild/EatNat.vue';
-
 let router = new VueRouter({
     routes:[
         {
@@ -64,10 +61,6 @@ let router = new VueRouter({
 		{
 			path:"/Balance",
 			component:Balance,
-        },
-        {  //测试非吃不可路由
-			path:"/EatNat",
-			component:EatNat,
 		},
 		{
 			path:"/Invite",
