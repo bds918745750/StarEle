@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import deliciousHead from "../../components/GuideChild/delicious/deliciousHead.vue";
+import deliciousHead from "../../components/GuideChild/delicious/deliciousHead";
 import deliciousNav from "../../components/GuideChild/delicious/deliciousNav";
 import deliciousKey from "../../components/GuideChild/delicious/deliciousKey";
 import deliciousAdress from "../../components/GuideChild/delicious/deliciousAdress";
