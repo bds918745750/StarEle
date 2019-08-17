@@ -36,10 +36,10 @@
             <img src="../../assets/imgs/Homepage/nav-icon/9.png">
             <span>八大菜系</span>
         </a>
-        <a href="javaScript:;">
+        <router-link to="/Classify">
             <img src="../../assets/imgs/Homepage/nav-icon/10.png">
             <span>全部分类</span>
-        </a>
+        </router-link>
     </nav>
 </template>
 

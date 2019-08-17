@@ -31,14 +31,11 @@ import BeforeLogin from '../views/Myisbefore/BeforeLogin.vue';
 //首页子页面
 import Fitness from '../views/HomePageChild/Fitness.vue';
 import MoneyOff from '../views/HomePageChild/MoneyOff.vue';
-<<<<<<< HEAD
 import Live from '../views/HomePageChild/Live.vue';
 import Gsou from '../views/HomePageChild/Gsou.vue';
-=======
 import Week from '../views/HomePageChild/Week.vue';
 import Hot from '../views/HomePageChild/Hot.vue';
 
->>>>>>> ab0024438e99bf66399a7e44bfa4f1a164ec646c
 
 
 //指南的子页面
@@ -117,7 +114,6 @@ let router = new VueRouter({
         {
 			path:"/MoneyOff",
 			component:MoneyOff,
-<<<<<<< HEAD
         },
         {
 			path:"/Live",
@@ -128,8 +124,7 @@ let router = new VueRouter({
 			component:Gsou,
         },
         
-=======
-		},
+
 		{
 			path:"/Week",
 			component:Week,
@@ -137,8 +132,7 @@ let router = new VueRouter({
 		{
 			path:"/Hot",
 			component:Hot,
-		},
->>>>>>> ab0024438e99bf66399a7e44bfa4f1a164ec646c
+        },
         //H------------------
 		
 		//指南二级
