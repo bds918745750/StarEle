@@ -10,6 +10,9 @@ import Guide from '../views/Guide.vue';
 import Order from '../views/Order.vue';
 //我的模块
 import Myis from '../views/Myis.vue';
+
+
+
 // 我的 子页面
 import Options from '../views/MyisChild/Options.vue';
 import UserControl from '../views/MyisChild/UserControl.vue';
@@ -23,6 +26,7 @@ import Evaluate from '../views/MyisChild/Evaluate.vue';
 import Service from '../views/MyisChild/Service.vue';
 import Set from '../views/MyisChild/Set.vue';
 // 我的 登录前页面
+// 我的 登录前页面(守卫)
 import BeforeLogin from '../views/Myisbefore/BeforeLogin.vue';
 
 
@@ -43,6 +47,24 @@ import Address from '../views/HomePageChild/Address.vue';
 
 //指南的子页面
 import delicious from '../views/GuideChild/delicious.vue';
+
+
+
+//公共页面路由
+//登录页面
+import Login from "../views/GongGong/Login.vue"
+//菜单页面
+import Menu from "../views/GongGong/Menu.vue"
+//搜索页面
+import Search from "../views/GongGong/Search.vue"
+//评价页面
+import GEvaluate from "../views/GongGong/Evaluate"
+//商品故事
+import ShopStory from "../views/GongGong/ShopStory"
+//购物车
+import Shopping from "../views/GongGong/Shopping"
+//详情页
+import ShopsingleDetailsping from "../views/GongGong/SingleDetails.vue"
 
 let router = new VueRouter({
     routes:[
@@ -171,6 +193,44 @@ let router = new VueRouter({
 			path:"/BeforeLogin",
 			component:BeforeLogin,
 		},
+		// 公共路由
+		//登录页面
+		{
+			path:"/Login",
+			component:Login,
+		},
+		// --------------
+		//菜单页面
+		{
+			path:"/Menu",
+			component:Menu,
+		},
+		//搜索页面
+		{
+			path:"/Search",
+			component:Search,
+		},
+		//评价页面
+		{
+			path:"/GEvaluate",
+			component:GEvaluate,
+		},
+		//商品故事
+			{
+			path:"/ShopStory",
+			component:ShopStory,
+		},
+		//购物车
+		{
+			path:"/Shopping",
+			component:Shopping,
+		},
+		//商品详情
+		{
+			path:"/ShopsingleDetailsping",
+			component:ShopsingleDetailsping,
+		},
+
 		
     ]
 })

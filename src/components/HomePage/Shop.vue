@@ -1,5 +1,9 @@
 <template>
+<<<<<<< HEAD
    <div class="ShopDet">
+=======
+   <div class="ShopDet" >
+>>>>>>> aa23efd4029aa921d767c41c338b1a4ef0d458f0
     <div class="ShopDet_left">
       <span>星选好店</span>
       <img src="../../assets/imgs/Homepage/Shop_logo/小六汤包(高新南路).png" />
