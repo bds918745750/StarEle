@@ -1,9 +1,9 @@
 <template>
-		<header>
-			<div class="row"></div>
+		<div class="shoppingheader">
+			<div class="row"><</div>
 			<h3 class="shopName">购物车</h3>
 			<div class="blank">清空</div>
-		</header>
+		</div>
 </template>
 <script>
 export default {
@@ -12,7 +12,7 @@ export default {
 </script>
 
 <style scoped>
-header{
+.shoppingheader{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;

@@ -9,8 +9,8 @@
       <div class="name">小六汤包(高新路店)</div>
       <div class="mid">
         <div class="mid_right">
-          <span class="f1">4.5分</span>
-          <span class="count f1">| 月售:200</span>
+          <span class="f1">{{data.nearbyShop.nearbyShopStar}}</span>
+          <span class="count f1">| 月售:{{data.nearbyShop.nearbyShopSale}}</span>
         </div>
         <div class="zhuanSong">
           <span>蜂鸟专送</span>
@@ -23,8 +23,8 @@
           <span>配送 20</span>
         </div>
         <div class="ShopDet_down_right">
-          <span class="time f1">30 分钟 |</span>
-          <span class="distance f1">889m</span>
+          <span class="time f1">{{data.nearbyShop.nearbyShopTime}} 分钟 |</span>
+          <span class="distance f1">{{data.nearbyShop.nearbyShopDistance}}</span>
         </div>
       </div>
 
@@ -37,10 +37,10 @@
       </div>
 
       <ul class="activety">
-        <li>首单减17</li>
-        <li>35减6</li>
-        <li>55减13</li>
-        <li>85减18</li>
+        <!-- <li>首单减17</li> -->
+        <li>{{data.nearbyShopMitig[0].full}}减{{data.nearbyShopMitig[0].minus}}</li>
+        <li>{{data.nearbyShopMitig[1].full}}减{{data.nearbyShopMitig[1].minus}}</li>
+        <li>{{data.nearbyShopMitig[2].full}}减{{data.nearbyShopMitig[2].minus}}</li>
       </ul>
     </div>
   </div>
@@ -48,8 +48,9 @@
 
 <script>
 export default {
-  name: "Shop"
-};
+  name: "Shop",
+  props:["data","id"]
+ }
 </script>
 
 <style scoped>

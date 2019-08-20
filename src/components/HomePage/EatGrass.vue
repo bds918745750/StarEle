@@ -30,8 +30,7 @@
 
 <script>
 export default {
-  name: "EatGrass",
-  props:["data"]
+  name: "EatGrass"
 };
 </script>
 

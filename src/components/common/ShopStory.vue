@@ -39,7 +39,7 @@
 			<h2>商家服务</h2>
 		</div>
 		<div class="monPre">
-			<img src="../../assets/imgs/ShopStory/pay.jpg" >
+			<img src="../../assets/imgs/ShopStory/pay.jpg" class="payImg">
 			<span>支持在线支付</span>
 		</div>
 	</div>

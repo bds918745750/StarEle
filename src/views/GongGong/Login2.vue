@@ -1,15 +1,14 @@
-
 <template>
-	<ele-Login></ele-Login>
+	<ele-Login2></ele-Login2>
 </template>
 
 <script>
-import Login from "../../components/common/Login"	
+import Login2 from "../../components/common/Login2"	
 	
 export default{
-	name:"Login",
+	name:"Login2",
 	components:{
-		"ele-Login":Login
+		"ele-Login2":Login2
 	}
 }
 	

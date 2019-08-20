@@ -2,16 +2,18 @@
   <div class="HomePage">
     <div class="bigBox">
       <ele-homepage-header></ele-homepage-header>
-      <ele-homepage-Nav v-if="HomeInfo.menu" :data="HomeInfo.menu" ></ele-homepage-Nav>
-      <ele-homepage-Banner v-if="HomeInfo.banner" :data="HomeInfo.banner"></ele-homepage-Banner>
-      <ele-homepage-EatGrass v-if="HomeInfo.eatter" :data="HomeInfo.eatter"></ele-homepage-EatGrass>
+      <ele-homepage-Nav></ele-homepage-Nav>
+      <ele-homepage-Banner></ele-homepage-Banner>
+      <ele-homepage-EatGrass></ele-homepage-EatGrass>
       <ele-homepage-ServicePromises></ele-homepage-ServicePromises>
       <ele-homepage-FoodResearch></ele-homepage-FoodResearch>
-      <ele-homepage-SelectShop v-if="HomeInfo.nearbyShop" :data="HomeInfo.nearbyShop"></ele-homepage-SelectShop>
+      <ele-homepage-SelectShop></ele-homepage-SelectShop>
     </div>
     <ele-homepage-Footer></ele-homepage-Footer>
   </div>
 </template>
+
+
 
 
 <script>
@@ -26,10 +28,6 @@ import FoodResearch from "../components/HomePage/FoodResearch";
 import SelectShop from "../components/HomePage/SelectShop";
 import Footer from "../components/common/Footer";
 
-//引入首页数据
-
-import HomePage from "../apis/HomePage"
-
 export default {
   name: "HomePage",
   components: {
@@ -42,37 +40,32 @@ export default {
     "ele-homepage-SelectShop": SelectShop,
     "ele-homepage-Footer": Footer
   },
-  created() {
-    this._initPageData();
-  },
-  data(){
-    return{
-      HomeInfo:{}
-    }
-  },
-  methods: {
-    _initPageData() {
-      HomePage.getHomePage(data => {
-        console.log(data);
-        this.HomeInfo= data;
-
-      });
-    }
-  },
-
+  mounted() {
+    var mySwiper = new Swiper(".swiper-container", {
+      loop: true, // 循环模式选项
+      autoplay: {
+        delay: 5000
+      },
+      // 如果需要分页器
+      pagination: {
+        el: ".swiper-pagination"
+      }
+    });
+  }
 };
 </script>
 
 <style scoped>
-@import "../assets/HomePage.css";
-.HomePage {
-  display: -webkit-flex;
-  flex-direction: column;
-}
+  @import "../assets/HomePage.css";
+  .HomePage{
+    display: -webkit-flex;
+	  flex-direction:column;  
+  }
 
-.bigBox {
-  flex: 1;
-  overflow-y: auto;
-}
+  .bigBox{
+    flex:1;
+	  overflow-y:auto;
+  }
+
 </style>
     

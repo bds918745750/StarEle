@@ -1,6 +1,6 @@
 <template>
     <!-- 头部 -->
-    <div class="header">
+    <div class="Gsouheader">
         <img class="img1" src="../../../assets/imgs/HomepageChild/Finess/img/gsou.jpg" alt="">
         <router-link to="/">
              <img class="img2" src="../../../assets/imgs/HomepageChild/Finess/img/fanhui.jpg" alt="">
@@ -20,14 +20,14 @@ export default {
 
 <style scoped>
 /* 优享生活 */
-.header{
+.Gsouheader{
     width: 100%;
 }
-.header .img1{
+.Gsouheader .img1{
     width: 100%;
     position: relative;
 }
-.header .img2{
+.Gsouheader .img2{
     width: .35rem;
     height: .35rem;
     opacity: .1;

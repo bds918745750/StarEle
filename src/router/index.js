@@ -48,6 +48,7 @@ import delicious from '../views/GuideChild/delicious.vue';
 
 //公共页面路由
 //登录页面
+import Login2 from "../views/GongGong/Login2.vue"
 import Login from "../views/GongGong/Login.vue"
 //菜单页面
 import Menu from "../views/GongGong/Menu.vue"
@@ -65,8 +66,8 @@ import ShopsingleDetailsping from "../views/GongGong/SingleDetails.vue"
 let router = new VueRouter({
     routes:[
         {
-            path:"/",
-            component:HomePage
+         path:"/",
+		 component:HomePage
         },
         {
             path:"/Myis",
@@ -194,6 +195,10 @@ let router = new VueRouter({
 		{
 			path:"/Login",
 			component:Login,
+		},
+		{
+			path:"/Login2",
+			component:Login2,
 		},
 		// --------------
 		//菜单页面

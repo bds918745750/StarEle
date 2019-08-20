@@ -26,7 +26,6 @@ export default {
 
 <style scoped>
 .shopList{
-	border-bottom: 1px solid gray;
 	margin-top: .15rem;
 }
 </style>
