@@ -14,9 +14,6 @@ export default {
   name: "Nav",
   props: ["data"], //菜单
   data() {
-    return {
-      flag: ""
-    };
   },
   methods: {
     Flag: function(tat) {
