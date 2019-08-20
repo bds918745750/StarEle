@@ -1,9 +1,9 @@
 <template>
     <!-- 满减主义 -->
-    <div class="ism MoneyOffheader">
-        <img src="../../../assets/imgs/HomepageChild/Finess/img/ism.png" class="ismhead-img">
+    <div class="ism header">
+        <img src="../../../assets/imgs/HomepageChild/Finess/img/ism.png" alt="">
         <router-link to="/">
-             <img class="img2" src="../../../assets/imgs/HomepageChild/Finess/img/fanhui.jpg">
+             <img class="img2" src="../../../assets/imgs/HomepageChild/Finess/img/fanhui.jpg" alt="">
         </router-link>
         <ul>
             <li>中式餐饮</li>
@@ -38,15 +38,15 @@ export default {
     text-align: center;
     line-height: .5rem;
 }
-.MoneyOffheader{
+.header{
     width: 100%;
 }
-.MoneyOffheader img{
+.header img{
     width: 100%;
     height: 3.68rem;
     position: relative;
 }
-.MoneyOffheader h4{
+.header h4{
     width: .45rem;
     height: .25rem;
     font-size: .13rem;
@@ -60,7 +60,7 @@ export default {
     text-align: center;
     line-height: .25rem;
 }
-.MoneyOffheader .img2{
+.header .img2{
     width: .35rem;
     height: .35rem;
     opacity: .3;

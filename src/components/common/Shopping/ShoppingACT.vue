@@ -34,17 +34,13 @@ export default {
 <style scoped>
 /* 商家活动 */
 .packPrice{
-	/* font-size: .22rem; */
+	font-size: .18rem;
 	margin-top: .19rem;
 	display: flex;
 	justify-content: space-between;
 }
-.packPrice span{
-font-size: .18rem;
-}
 .packPrice p{
-	font-size: .18rem;
-	margin-right: .5rem;
+	margin-right: .4rem;
 }
 
 /* 满减活动 */

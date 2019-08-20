@@ -74,7 +74,6 @@ export default {
 	border-radius: 50%;
 }
 .num span{
-	font-size: .15rem;
 	margin:0 .1rem
 }
 
@@ -82,13 +81,6 @@ export default {
 	font-size:.15rem;
 	line-height: .78rem;
 	text-indent: 1rem;
-}
-.singlePrice span{
-	font-size: .15rem;
-}
-.trash img{
-	width:.2rem ;
-	height: .2rem;
 }
 </style>
     

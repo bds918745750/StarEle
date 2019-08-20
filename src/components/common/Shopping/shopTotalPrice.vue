@@ -18,11 +18,7 @@ export default {
 	align-items: center;
 	float: right;
 }
-.shopTotalPrice div{
-	font-size: .15rem;
-}
 .shopTotalPrice span{
-	font-size: .15rem;
 	color: red;
 }
 .accountBtn{
