@@ -1,16 +1,17 @@
 import Vue from "vue"
 import VueRouter from "vue-router"
 Vue.use(VueRouter)
-import index from "../views/index"
 
-//导入所有的mintui
-import MintUI from 'mint-ui'
+//首页模块
+import HomePage from '../views/HomePage.vue';
+//指南模块
+import Guide from '../views/Guide.vue';
+//订单模块
+import Order from '../views/Order.vue';
+//我的模块
+import Myis from '../views/Myis.vue';
 
-//可以省略 node_modules这一层
-import 'mint-ui/lib/style.css'
 
-//讲MintUI安装到Vue中   把所有的组件注册为全局
-Vue.use(MintUI)
 
 // 我的 子页面
 import Options from '../views/MyisChild/Options.vue';
@@ -47,7 +48,6 @@ import delicious from '../views/GuideChild/delicious.vue';
 
 //公共页面路由
 //登录页面
-import Login2 from "../views/GongGong/Login2.vue"
 import Login from "../views/GongGong/Login.vue"
 //菜单页面
 import Menu from "../views/GongGong/Menu.vue"
@@ -195,10 +195,6 @@ let router = new VueRouter({
 			path:"/Login",
 			component:Login,
 		},
-		{
-			path:"/Login2",
-			component:Login2,
-		},
 		// --------------
 		//菜单页面
 		{
@@ -235,5 +231,4 @@ let router = new VueRouter({
     ]
 })
 
-
-export default router;
+export default router

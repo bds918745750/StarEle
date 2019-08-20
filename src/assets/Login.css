@@ -1,0 +1,112 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,input,textarea,select,td,th{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+ul,ol{
+	list-style: none;
+}
+html,body{
+	height: 100%;
+}
+body{
+	font-family: 微软雅黑;
+	display: -webkit-flex;
+	-webkit-flex-direction:column;
+	padding: .26rem .15rem 0;
+}
+html{
+	font-size: 26.67vw;
+}
+img{
+	border: none;
+	display: block;
+}
+/* 头部*/
+	.header{
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: .62rem;
+	}
+	
+	.header img{
+		width:.30rem;
+		height:.18rem ;
+	}
+	
+	.header h1{
+		font-size: .25rem;
+		letter-spacing: 10px;
+	}
+	
+	.header h3{
+		font-size: .18rem;
+		color: #474747;
+		line-height:.36rem ;
+	}
+	.phoneNum{
+		width:100% ;
+		height: .61rem;
+		border-bottom:1px solid black;
+		display: flex;
+		justify-content: space-between;
+	}
+	#phoneNum{
+		width: 80%;
+		border: none;
+		color: #000000;
+		font-size: .18rem;
+		background: #f7f6f6;
+	}
+	input::-webkit-input-placeholder{
+		font-size: .18rem;
+	}
+	.x{
+		display: block;
+		font-size: .35rem;
+		color: #ceced2;
+		line-height: .58rem;
+	}
+	.contet h6{
+		font-size: 10px;
+		color: #FF0000;
+	}
+	.loginBtn{
+		width: 3.46rem;
+		height: .4rem;
+		background:#ea4451;
+		color: white;
+		border-radius: 6px;
+		font-size: .23rem;
+		line-height:.4rem ;
+		text-align: center;
+		letter-spacing: 5px;
+		margin-top: .4rem;
+	}
+	.registerBtn{
+		width: 3.46rem;
+		height: .4rem;
+		background:#ea4451;
+		color: white;
+		border-radius: 6px;
+		font-size: .23rem;
+		line-height:.4rem ;
+		text-align: center;
+		letter-spacing: 5px;
+		margin-top: .4rem;
+	}
+	
+	.vertifyCode{
+		display: block;
+		width:.8rem ;
+		height: .3rem;
+		border: 1px solid black;
+		font-size: .1rem;
+		margin-top: .15rem;
+		line-height: .3rem;
+		text-align: center;
+	}

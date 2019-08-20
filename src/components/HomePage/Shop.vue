@@ -51,6 +51,9 @@ export default {
   name: "Shop",
   props:["data","id"]
  }
+ methods:{
+	 
+ }
 </script>
 
 <style scoped>
