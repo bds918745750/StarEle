@@ -1,8 +1,8 @@
 <template>
-    <div class="header">
-        <img class="img1" src="../../../assets/imgs/HomepageChild/Finess/img/eat.jpg" alt="">
+    <div class="Hotheader">
+        <img class="Hotimg1" src="../../../assets/imgs/HomepageChild/Finess/img/eat.jpg" >
         <router-link to="/">
-        <img class="img2" src="../../../assets/imgs/HomepageChild/Finess/img/fanhui.jpg" alt=""> 
+        <img class="Hotimg2" src="../../../assets/imgs/HomepageChild/Finess/img/fanhui.jpg"> 
         </router-link>
     </div>
 </template>
@@ -18,14 +18,15 @@ export default {
 </script>
 
 <style scoped>
-.header{
+.Hotheader{
     width: 100%;
 }
-.header .img1{
+.Hotheader .Hotimg1{
     width: 100%;
-    position: relative;
+	height: 2.8rem;
 }
-.header .img2{
+.Hotheader .Hotimg2{
+	display: block;
     width: .35rem;
     height: .35rem;
     opacity: .1;

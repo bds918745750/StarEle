@@ -1,5 +1,5 @@
 <template>
-	<div class="bigBox">
+	<div class="LoginbigBox">
 		<div class="header">
 			  <img src="../../assets/imgs/Login/left-36.png">
 			  <h1>登录</h1>
@@ -8,7 +8,7 @@
 			
 		<div class="contet">
 				<div class="phoneNum">
-					<input type="text" placeholder="请输入正确的号码" id="phoneNum">
+					<input type="text" placeholder="请输入正确的号码" id="phoneNum" v-model="userID" :key="userID">
 					<span class="x">x</span>
 				</div>
 				<h6>请输入正确的电话号码</h6>
@@ -42,4 +42,7 @@
 </script>
 
 <style scoped="scoped">
+	.LoginbigBox{
+		padding: 0.26rem 0.15rem 0;
+	}
 </style>
