@@ -6,9 +6,11 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
+    
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "express": "^4.17.1",
     "swiper": "^4.5.0",
     "vue": "^2.6.10",
     "vue-router": "^3.1.2",
@@ -45,5 +47,18 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
-  ]
+  ],
+  "description": "```\r npm install\r ```",
+  "main": "babel.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bds918745750/StarEle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bds918745750/StarEle/issues"
+  },
+  "homepage": "https://github.com/bds918745750/StarEle#readme"
 }
