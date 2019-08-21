@@ -19,12 +19,19 @@
 		
 	export default{
 		name:"Menu",
+		//获取点击的店铺信息
+		props:["data","id"],
 		components:{
 			"ele-Menu-MenuHead":MenuHead,
 			"ele-Menu-MenuDetails":MenuDetails,
 			"ele-Menu-MenuThreeMode":MenuThreeMode,
 			"ele-Menu-MenuBox":MenuBox,
 			"ele-Menu-MenuFooter":MenuFooter,
+		},
+		data(){
+			return{
+				
+			}
 		}
 	}
 </script>

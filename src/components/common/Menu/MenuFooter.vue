@@ -15,4 +15,7 @@
 </script>
 
 <style scoped>
+	.selfshopCar{
+		margin-left:.15rem;
+	}
 </style>

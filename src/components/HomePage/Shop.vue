@@ -1,16 +1,17 @@
 <template>
-   <div class="ShopDet" >
+<div>
+   <div class="ShopDet" v-for="(item,key) in data.nearbyShop" :key="key" @click="HomePageShop(key)">
     <div class="ShopDet_left">
       <span>星选好店</span>
-      <img src="../../assets/imgs/Homepage/Shop_logo/小六汤包(高新南路).png" />
+      <img :src="item.nearbyShopyPic" />
     </div>
 
     <div class="ShopDet_content">
-      <div class="name">小六汤包(高新路店)</div>
+      <div class="name">{{item.nearbyShopName}}</div>
       <div class="mid">
         <div class="mid_right">
-          <span class="f1">4.5分</span>
-          <span class="count f1">| 月售:200</span>
+          <span class="f1">{{item.nearbyShopStar}}</span>
+          <span class="count f1">| 月售:{{item.nearbyShopSale}}</span>
         </div>
         <div class="zhuanSong">
           <span>蜂鸟专送</span>
@@ -23,8 +24,8 @@
           <span>配送 20</span>
         </div>
         <div class="ShopDet_down_right">
-          <span class="time f1">30 分钟 |</span>
-          <span class="distance f1">889m</span>
+          <span class="time f1">{{item.nearbyShopTime}} 分钟 |</span>
+          <span class="distance f1">{{item.nearbyShopDistance}}</span>
         </div>
       </div>
 
@@ -37,19 +38,29 @@
       </div>
 
       <ul class="activety">
-        <li>首单减17</li>
-        <li>35减6</li>
-        <li>55减13</li>
-        <li>85减18</li>
+        <!-- <li>首单减17</li> -->
+        <li></li>
       </ul>
     </div>
   </div>
+</div>
 </template>
 
 <script>
 export default {
-  name: "Shop"
-};
+  name: "Shop",
+  props:["data","id"],
+ methods:{
+	 HomePageShop(item){
+		this.$router.push({
+			path:"/Menu",query:{
+				shopid:item
+			}
+		});
+		console.log(item)
+	 }
+ },
+ }
 </script>
 
 <style scoped>

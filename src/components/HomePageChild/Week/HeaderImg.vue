@@ -1,8 +1,8 @@
 <template>
       <div class="header">
-        <img src="../../../assets/imgs/HomepageChild/Finess/img/week4.jpg" alt="">
+        <img src="../../../assets/imgs/HomepageChild/Finess/img/week4.jpg">
        <router-link to="/">
-        <img class="img2" src="../../../assets/imgs/HomepageChild/Finess/img/fanhui.jpg" alt=""> 
+        <img class="img2" src="../../../assets/imgs/HomepageChild/Finess/img/fanhui.jpg"> 
         </router-link>
     </div>
 
@@ -49,7 +49,7 @@ export default {
     opacity: .3;
     border-radius: 12px;
     position: absolute;
-    top: .355rem;
+    top: .25rem;
     left: .062rem;
 }
 </style>

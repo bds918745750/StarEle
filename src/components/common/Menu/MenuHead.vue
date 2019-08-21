@@ -2,7 +2,7 @@
 <div>
 	<div class="menuheader">
 		<div class="iconBox">
-			<img src="../../../assets/imgs/Menu/left-50.png">
+			<router-link to="/"><img src="../../../assets/imgs/Menu/left-50.png"></router-link>
 			<input type="text" placeholder="搜索店内商品" class="shopSearchInput">
 			<img src="../../../assets/imgs/Menu/hearts-50.png" class="heart">
 		</div>
