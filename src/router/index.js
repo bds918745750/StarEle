@@ -65,8 +65,8 @@ import ShopsingleDetailsping from "../views/GongGong/SingleDetails.vue"
 let router = new VueRouter({
     routes:[
         {
-         path:"/",
-		 component:HomePage
+            path:"/",
+            component:HomePage
         },
         {
             path:"/Myis",

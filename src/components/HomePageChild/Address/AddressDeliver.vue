@@ -2,11 +2,11 @@
 	<div class="deliver">
         <div class="dopant">
             <div class="dopantLeft">
-                <i>西安市</i><img src="../../../assets/imgs/HomepageChild/Adress/xian.png">
+                <i>西安市</i><img src="../../../assets/imgs/HomepageChild/Adress/xian.png" alt="">
             </div>
             <div class="dopantRight">
-                <input type="text" placeholder="请输入您的收货地址">
-                <img src="../../../assets/imgs/HomepageChild/Adress/search.png" >
+                <input type="text" placeholder="        请输入您的收货地址">
+                <img src="../../../assets/imgs/HomepageChild/Adress/search.png" alt="">
             </div>   
         </div>
     </div>
@@ -77,7 +77,7 @@ export default {
     width: .18rem;
     height: .18rem;
     position: absolute;
-    top: .08rem;
-    left: -0.18rem;
+    top: .1rem;
+    left: 5px;
 }
 </style>

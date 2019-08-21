@@ -1,6 +1,6 @@
 <template>
    <!-- 头部 -->
-    <div class="Fitinessheader">
+    <div class="header">
         <img src="../../../assets/imgs/HomepageChild/Finess/img/banner.jpg" alt="">
         <router-link to="/">
              <img class="img2" src="../../../assets/imgs/HomepageChild/Finess/img/fanhui.jpg" alt="">
@@ -22,15 +22,15 @@ export default {
 
 <style scoped>
 /* 头部 */
-.Fitinessheader{
+.header{
     width: 100%;
 }
-.Fitinessheader img{
+.header img{
     width: 100%;
     height: 3.68rem;
     position: relative;
 }
-.Fitinessheader h4{
+.header h4{
     width: .45rem;
     height: .25rem;
     font-size: .13rem;
@@ -44,7 +44,7 @@ export default {
     text-align: center;
     line-height: .25rem;
 }
-.Fitinessheader .img2{
+.header .img2{
     width: .35rem;
     height: .35rem;
     opacity: .3;

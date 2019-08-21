@@ -1,8 +1,10 @@
 <template>
   <div>
-    <!-- <router-link to="/Menu"> -->
-      <ele-homepage-shop :data="data" ></ele-homepage-shop>
-    <!-- </router-link> -->
+    <router-link to="/Menu">
+      <ele-homepage-shop></ele-homepage-shop>
+    </router-link>
+    <ele-homepage-shop></ele-homepage-shop>
+    <ele-homepage-shop></ele-homepage-shop>
   </div>
 </template>
 
@@ -10,7 +12,6 @@
 import Shop from "./Shop";
 export default {
   name: "ShopList",
-  props:["data"],
   components: {
     "ele-homepage-shop": Shop
   }

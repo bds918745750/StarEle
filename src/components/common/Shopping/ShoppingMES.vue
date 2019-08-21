@@ -10,6 +10,9 @@
 				<div class="rightRow">
 					<h6>></h6>
 				</div>
+				<div class="editor">
+					<span>结算</span>
+				</div>
 			</div>
 </template>
 <script>
@@ -35,10 +38,9 @@ export default {
 	font-weight: 100;
 	text-indent: .15rem;
 }
-.nochecked img{
-	width:.15rem ;
-	height: .15rem;
+.editor{
+	font-size: .15rem;
+	text-indent: 1.15rem;
 }
-
 </style>
     

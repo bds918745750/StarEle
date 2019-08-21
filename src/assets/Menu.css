@@ -46,8 +46,8 @@ img{
 	padding-top: .1rem;
 }
 .iconBox img{
-	width: .3rem;
-	height: .3rem;
+	width: .2rem;
+	height: .2rem;
 }
 
 .shopSearchInput{
@@ -69,8 +69,6 @@ img{
 	color: white;
 	display: flex;
 	align-items: center;
-	margin-top: .15rem;
-	margin-left: .15rem;
 	/* display: none; */
 }
 .starShop h3{

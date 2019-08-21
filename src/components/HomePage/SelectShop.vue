@@ -8,7 +8,7 @@
         <a href="javaScript:;">距离</a>
         <a href="javaScript:;">心选</a>
       </div>
-      <ele-Homepage-shopList :data="data"></ele-Homepage-shopList>
+      <ele-Homepage-shopList></ele-Homepage-shopList>
     </div>
   </div>
 </template>
@@ -19,8 +19,7 @@ export default {
   name: "SeleShop",
   components: {
     "ele-Homepage-shopList": ShopList
-  },
-  props:["data"]
+  }
 };
 </script>
 

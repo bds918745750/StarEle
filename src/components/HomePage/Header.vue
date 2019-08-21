@@ -6,7 +6,7 @@
                 送至:<span>立人科技C座</span>
                 <i class='fas fa-angle-down'></i>
             </router-link>
-            <router-link to="/Login" class="header_top_right" >
+            <router-link to="/Shopping" class="header_top_right" >
                 <i class='fas fa-shopping-cart'></i>
             </router-link>
         </div>

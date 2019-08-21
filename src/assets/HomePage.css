@@ -44,7 +44,6 @@ nav{
 }
 
 nav a{
-	width: 20%;
 	font-size:0.1rem; 
 	display: flex;
 	flex-direction: column;

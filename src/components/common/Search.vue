@@ -2,7 +2,7 @@
 <div class="SearchBox">
 	<div class="serach">
 		<div class="backBtn">
-			<router-link to="/"><img src="../../assets/imgs/Search/left-36.png" ></router-link>
+			<img src="../../assets/imgs/Search/left-36.png" >
 		</div>
 		<img src="../../assets/imgs/Search/search-36.png" class="serachImg">
 		<input type="text" placeholder="冒菜">

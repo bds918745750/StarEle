@@ -1,5 +1,5 @@
 <template>
-<div class="shopingBox">
+<div>
 	<ele-Shopping-ShoppingTOP></ele-Shopping-ShoppingTOP>
 	<ele-Shopping-ShoppingCar></ele-Shopping-ShoppingCar>
 	<ele-Shopping-ShoppingLIST></ele-Shopping-ShoppingLIST>
@@ -23,8 +23,5 @@
 </script>
 
 <style scoped>
-.shopingBox{
-	padding: 0.26rem 0.15rem .6rem;
-	border-bottom:1px solid gray ;
-}
+
 </style>

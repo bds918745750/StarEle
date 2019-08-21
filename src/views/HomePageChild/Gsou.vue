@@ -1,5 +1,5 @@
 <template>
-<div>
+<div >
   <ele-homepage-Gsou-Gheader></ele-homepage-Gsou-Gheader>
   <ele-homepage-Gsou-Gtwo></ele-homepage-Gsou-Gtwo>
   <ele-homepage-Gsou-Gshoplist></ele-homepage-Gsou-Gshoplist>
