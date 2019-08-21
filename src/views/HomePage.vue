@@ -7,7 +7,7 @@
       <ele-homepage-EatGrass></ele-homepage-EatGrass>
       <ele-homepage-ServicePromises></ele-homepage-ServicePromises>
       <ele-homepage-FoodResearch></ele-homepage-FoodResearch>
-      <ele-homepage-SelectShop></ele-homepage-SelectShop>
+      <ele-homepage-SelectShop :data="Hompageindex"></ele-homepage-SelectShop>
     </div>
     <ele-homepage-Footer></ele-homepage-Footer>
   </div>
@@ -27,10 +27,11 @@ import ServicePromises from "../components/HomePage/ServicePromises";
 import FoodResearch from "../components/HomePage/FoodResearch";
 import SelectShop from "../components/HomePage/SelectShop";
 import Footer from "../components/common/Footer";
+import Hompageindex from "../apis/Hompageindex.js";
+import Menu from "./GongGong/Menu"
 
 export default {
   name: "HomePage",
-  props:["data"],
   components: {
     "ele-homepage-header": Header,
     "ele-homepage-Nav": Nav,
@@ -46,15 +47,16 @@ export default {
   },
   data(){
 	  return{
-		  index:{
-			  
-		  }
+		  Hompageindex:{}
 	  }
   },
   methods:{
 	  //私有组件传入
 	 _initPageData(){
-		index 
+		Hompageindex.getShopInfoByShopID(data=>{
+			console.log(data)
+			this.Hompageindex = data
+		}) 
 	 }
   },
   mounted() {
