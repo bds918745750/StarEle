@@ -39,10 +39,6 @@
 		display: flex;
 		justify-content: space-around;
 		padding: 10px 0;
-		position: fixed;
-		bottom: 0;
-		width: 100%;
-		z-index: 100;
 	}
 
 	footer a {

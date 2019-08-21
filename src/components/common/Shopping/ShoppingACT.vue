@@ -35,6 +35,7 @@ export default {
 /* 商家活动 */
 .packPrice{
 	/* font-size: .22rem; */
+	font-size: .18rem;
 	margin-top: .19rem;
 	display: flex;
 	justify-content: space-between;

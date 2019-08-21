@@ -1,6 +1,6 @@
 <template>
 		<div class="shoppingheader">
-			<div class="row"><</div>
+			<div class="row"> < </div>
 			<h3 class="shopName">购物车</h3>
 			<div class="blank">清空</div>
 		</div>

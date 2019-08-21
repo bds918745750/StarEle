@@ -74,7 +74,8 @@ let router = new VueRouter({
         },
         {
             path:"/Guide",
-            component:Guide
+			component:Guide
+			
         },
         {
             path:"/Order",
@@ -97,26 +98,6 @@ let router = new VueRouter({
 			path:"/Balance",
 			component:Balance,
         },
-        //首页子页面注册
-        {
-			path:"/Fitness",
-			component:Fitness,
-        },
-        {
-			path:"/MoneyOff",
-			component:MoneyOff,
-        },
-		{
-			path:"/Address",
-			component:Address,
-		},
-        //H------------------
-		
-		//指南二级
-		{
-			path:"/delicious",
-			component:delicious,
-		},
 		{
 			path:"/Invite",
 			component:Invite,
@@ -145,6 +126,27 @@ let router = new VueRouter({
 			path:"/Set",
 			component:Set,
 		},
+        //首页子页面注册
+        {
+			path:"/Fitness",
+			component:Fitness,
+        },
+        {
+			path:"/MoneyOff",
+			component:MoneyOff,
+        },
+		{
+			path:"/Address",
+			component:Address,
+		},
+        //H------------------
+		
+		//指南二级
+		{
+			path:"/delicious",
+			component:delicious,
+		},
+
 		// M----------------------
         //首页子页面注册
         {
@@ -220,15 +222,38 @@ let router = new VueRouter({
 		{
 			path:"/Shopping",
 			component:Shopping,
+			meta:{
+				requiresAuth:true
+			}
 		},
 		//商品详情
 		{
 			path:"/ShopsingleDetailsping",
 			component:ShopsingleDetailsping,
-		},
-
-		
+		},	
     ]
-})
+});
+//路由守卫
+router.beforeEach((to,from,next)=>{	
+	console.log(to)
+	if(to.meta.requiresAuth){
+		if(to.meta.requiresAuth==true){
+			if(!localStorage.getItem("userID")){
+				let params = to.params;
+				params.redirect =  to.fullPath;//原来的页面
+				next({
+						name: 'login',
+						params:params,
+					  });
+			}else{
+				next();
+			}
+		}else{
+			next();
+		}
+	}else{
+		next();
+	}
+});
 
 export default router
