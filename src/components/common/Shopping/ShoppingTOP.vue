@@ -21,30 +21,30 @@ export default {
 </script>
 
 <style scoped>
-.shoppingheader{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: .37rem;
-	padding: .15rem  0;
+.shoppingheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 0.37rem;
+  padding: 0.15rem 0;
 }
 .row img{
 	width: 0.27rem;
 	height:0.46rem ;
 }
-.shopName{
-	font-size: .18rem;
-	color: #4d4d4d;	
-	letter-spacing:5px;
+.shopName {
+  font-size: 0.18rem;
+  color: #4d4d4d;
+  letter-spacing: 5px;
 }
-.blank{
-	font-size: .15rem;
-	color: #4d4d4d;
+.blank {
+  font-size: 0.15rem;
+  color: #4d4d4d;
 }
-.trash img{
-	width:.15rem;
-	height: .15rem;
-	margin-left: .15rem;
+.trash img {
+  width: 0.15rem;
+  height: 0.15rem;
+  margin-left: 0.15rem;
 }
 </style>
     
