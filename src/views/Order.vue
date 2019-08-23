@@ -1,6 +1,6 @@
 <template>
   <div class="Order">
-    <ele-Order-Oheader ></ele-Order-Oheader>
+    <ele-Order-Oheader></ele-Order-Oheader>
     <div class="bigBox">
       <ele-Order-Log></ele-Order-Log>
     </div>
@@ -12,6 +12,7 @@
 import Oheader from "../components/Order/Oheader";
 import Log from "../components/Order/Log";
 import Footer from "../components/common/Footer";
+
 export default {
   name: "Order",
   components: {
@@ -25,14 +26,14 @@ export default {
 <style scoped>
 @import "../assets/Order.css";
 
-.Order {
-  display: -webkit-flex;
-  flex-direction: column;
-  height: 100%;
-}
+.Order{
+    display: -webkit-flex;
+      flex-direction:column;  
+      height: 100%;
+  }
 
-.bigBox {
-  flex: 1;
-  overflow-y: auto;
-}
+  .bigBox{
+    flex:1;
+	overflow-y:auto;
+  }
 </style>

@@ -51,7 +51,7 @@ img{
 	}
 	.phoneNum{
 		width:100% ;
-		height: .61rem;
+		height: .41rem;
 		border-bottom:1px solid lightgray;
 		display: flex;
 		justify-content: space-between;
@@ -70,7 +70,6 @@ img{
 		display: block;
 		font-size: .25rem;
 		color: #ceced2;
-		line-height: .58rem;
 	}
 	.contet h6{
 		font-size: 10px;
@@ -108,7 +107,6 @@ img{
 		height: .3rem;
 		border: 1px solid black;
 		font-size: .1rem;
-		margin-top: .15rem;
 		line-height: .3rem;
 		text-align: center;
 	}

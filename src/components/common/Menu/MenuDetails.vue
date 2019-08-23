@@ -2,21 +2,29 @@
 	<div class="menu-details">
 			<div class="shopMessage">
 				<div class="shopMessageLeft">
-					<h1 >{{data.nearbyShopName}}</h1>
+					<h1>小六汤包（高新路店）</h1>
 					<div class="sendTime">
 						<img src="../../../assets/imgs/Menu/watch-50.png" >
-						<span>约{{data.nearbyShopTime}}送达</span>
+						<span>约40分钟送达</span>
 					</div>
 				</div>
 				<div class="shopMessageRight">
-					<img :src="data.nearbyShopPic">
+					<img src="../../../assets/imgs/Menu/shopname.jpg">
 				</div>	
 			</div>
 			<div class="fullradiusAndmore">
 				<div class="fullReduse">
-				<div class="fullRedusebox" v-for="(time,id) in data.nearbyShopMitig" :key="id">
-					<span class="fullPrice">满{{time.full}}减{{time.minus}}</span>
+				<div class="fullRedusebox">
+					<span class="fullPrice">满30减15</span>
 					<!-- 减<span class="minus">15</span> -->
+				</div>
+				<div class="fullRedusebox">
+					<span class="fullPrice">满20减10</span>
+					<!-- <span class="minus">10</span> -->
+				</div>
+				<div class="fullRedusebox">
+					<span class="fullPrice">满15减5</span>
+					<!-- <span class="minus">5</span> -->
 				</div>
 			</div> 
 				<div class="moreRows">	
@@ -56,9 +64,7 @@
 
 <script>
 	export default{
-		name:"MenuDetails",
-		props:["data"],
-		
+		name:"MenuDetails"
 	}
 </script>
 

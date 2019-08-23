@@ -3,8 +3,7 @@
 </template>
 
 <script>
-import Login from "../../components/common/Login"
-import axios from "axios"	
+import Login from "../../components/common/Login"	
 	
 export default{
 	name:"Login",

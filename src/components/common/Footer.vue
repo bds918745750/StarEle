@@ -8,7 +8,7 @@
 			<img src="../../assets/imgs/footer/footer-2.png">
 				<span>指南</span>
 		</router-link>
-		<router-link to="/Xq">
+		<router-link to="/Order">
 			<img src="../../assets/imgs/footer/footer-3.png">
 				<span>订单</span>
 		</router-link>
