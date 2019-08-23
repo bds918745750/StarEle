@@ -280,7 +280,7 @@ let router = new VueRouter({
 router.beforeEach((to, from, next) => {
 	if (to.meta.requiresAuth) {
 		if (to.meta.requiresAuth == true) {
-			if (!localStorage.getItem("userID_tel")) {
+			if (!localStorage.getItem("user_tel")) {
 				let params = to.params;
 				params.redirect = to.fullPath; //原来的页面
 				next({

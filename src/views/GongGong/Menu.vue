@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="MENU">
 		<ele-Menu-MenuHead></ele-Menu-MenuHead>
 		<div class="MbigBox">
 			<ele-Menu-MenuDetails :data="shops"></ele-Menu-MenuDetails>
@@ -49,12 +49,20 @@
 	}
 </script>
 
-<style>
+<style scoped>
 	@import"../../assets/Menu.css";
+	.MENU{
+		height: 100%;
+	}
 	.MbigBox{
 		display: flex;
 		flex-direction: column;
 		overflow-y:auto ;
 		padding: 0 .15rem;
+		height: 100%;
+		position: sticky;
+		top: 0;
+
 	}
+
 </style>

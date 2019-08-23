@@ -81,20 +81,33 @@ export default {
     getCode() {
       this.$axios({
         method: "post",
-        url: "http://192.168.0.128:8060/logintel/",
+        // url: "http://192.168.0.128:8060/logintel/",
+        url: "http://10.35.170.75:8000/logintel/",
         data: {
           sendmsg: 1,
           user_tel: this.user_tel
         }
       }).then(res => {
-        let rs = res.data;
-        console.log(res.data);
+        let rs = res.data.code;
+        let text = res.data.message;
+        alert(text);
+        // if (rs == 0) {
+        //   alert(text);
+        //   // console.log(text);
+        // }
+        // if (rs == 1) {
+        //   alert(text);
+        // }
+        // if (rs == 2) {
+        //   alert(text);
+        // }
       });
     },
     Login() {
       this.$axios({
         method: "post",
-        url: "http://192.168.0.128:8060/logintel/",
+        // url: "http://192.168.0.128:8060/logintel/",
+        url: "http://10.35.170.75:8000/logintel/",
         data: {
           dosubmit: 1,
           user_tel: this.user_tel,
@@ -103,20 +116,23 @@ export default {
       }).then(res => {
         let rs = res.data.status;
         let phone = res.data.info;
-        if (rs == 0) {
-          console.log("登录成功");
-          localStorage.setItem("user_tel", phone);
-          history.back();
-        }
-        if (rs == 1) {
-          alert("请输入验证码");
-        }
-        if (rs == 2) {
-          alert("验证码无效或已过期");
-        }
-        if (rs == 3) {
-          alert("验证码输入有误");
-        }
+         alert(phone);
+        // if (rs == 0) {
+        //   console.log("登录成功");
+        //   localStorage.setItem("user_tel", phone);
+        //   history.back();
+        // }
+        // if (rs == 1) {
+        //   alert(phone);
+        // }
+        // if (rs == 2) {
+        //   alert(phone);
+        // }
+        // if (rs == 3) {
+        //   alert(phone);
+        // }if(rs == 4){
+        //   alert(phone);
+        // } 
       });
     }
   }

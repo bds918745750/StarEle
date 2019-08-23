@@ -99,6 +99,9 @@ img{
 	display: flex;
 	align-items: center;
 }
+.shopMessageLeft{
+	margin-right: 15px;
+}
 .shopMessageLeft h1{
 	font-size: .2rem;
 }
@@ -117,7 +120,6 @@ img{
 .shopMessageRight img{
 	width: .56rem;
 	height: .56rem;
-	margin-left: 90%;
 }
 .fullReduse{
 	display: flex;
@@ -270,6 +272,9 @@ img{
 	align-items: center;
 	margin-top: .2rem;
 	height:.25rem ;
+	position: relative;
+	top: 0;
+	left: 0;
 }
 
 .foodsPrice h5{
@@ -279,6 +284,9 @@ img{
 .foodsPrice img{
 	width: .24rem;
 	height: .25rem;
+	position: absolute;
+	top: 0;
+	left: 1.2rem;
 }
 .selfshopCar{
 	width:3.46rem ;

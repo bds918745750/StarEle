@@ -5,7 +5,6 @@
        <ele-homepage-Nav v-if="HomeInfo.menu" :data="HomeInfo.menu" ></ele-homepage-Nav>
       <ele-homepage-Banner v-if="HomeInfo.banner" :data="HomeInfo.banner"></ele-homepage-Banner>
       <ele-homepage-EatGrass v-if="HomeInfo.eatter" :data="HomeInfo.eatter"></ele-homepage-EatGrass>
-      <ele-homepage-EatGrass></ele-homepage-EatGrass>
       <ele-homepage-ServicePromises></ele-homepage-ServicePromises>
       <ele-homepage-FoodResearch></ele-homepage-FoodResearch>
       <ele-homepage-SelectShop v-if="HomeInfo" :data="HomeInfo"></ele-homepage-SelectShop>

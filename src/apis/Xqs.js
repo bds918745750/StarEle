@@ -8,7 +8,7 @@ const ORDERXQ =`${bascUrl}/api/Xqs`;
 export default {
 
     /**
-     * 获取首页数据信息
+     * 获取订单数据
      */
     getOrderXq(cb){
         Api.get(ORDERXQ,cb)
