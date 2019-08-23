@@ -3,7 +3,8 @@
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div v-for="(imgs,Iid) in data" :key="Iid" class="swiper-slide">
-          <img :src="'../../assets/imgs/Homepage/banner/'+imgs" />
+          <!-- <img :src="'../../assets/imgs/Homepage/banner/'+imgs" /> -->
+          <img :src="imgs" />
         </div>
       </div>
       <!-- 如果需要分页器 -->

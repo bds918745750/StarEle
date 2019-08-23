@@ -8,6 +8,7 @@ import HomePage from '../views/HomePage.vue';
 import Guide from '../views/Guide.vue';
 //订单模块
 import Order from '../views/Order.vue';
+import Xq from '../views/Xq.vue';
 //我的模块
 import Myis from '../views/Myis.vue';
 
@@ -70,61 +71,98 @@ let router = new VueRouter({
         },
         {
             path:"/Myis",
-            component:Myis
+            component:Myis,
         },
         {
             path:"/Guide",
-			component:Guide
-			
+            component:Guide
         },
         {
             path:"/Order",
             component:Order
         },
+		//订单的详细信息
+		{
+		    path:"/Xq",
+		    component:Xq
+		},
 		// 我的子页面
 		{
 			path:"/UserControl",
 			component:UserControl,
+			meta:{
+				requiresAuth:true
+			}
 		},
 		{
 			path:"/Options",
 			component:Options,
+			meta:{
+				requiresAuth:true
+			}
 		},
 		{
 			path:"/Collect",
 			component:Collect,
+			meta:{
+				requiresAuth:true
+			}
 		},
 		{
 			path:"/Balance",
 			component:Balance,
+			meta:{
+				requiresAuth:true
+			}
         },
 		{
 			path:"/Invite",
 			component:Invite,
+			meta:{
+				requiresAuth:true
+			}
 		},
 		{
 			path:"/Gather",
 			component:Gather,
+			meta:{
+				requiresAuth:true
+			}
 		},
 		{
 			path:"/Card",
 			component:Card,
+			meta:{
+				requiresAuth:true
+			}
 		},
 		{
 			path:"/Evaluate",
 			component:Evaluate,
+			meta:{
+				requiresAuth:true
+			}
 		},
 		{
 			path:"/Location",
 			component:Location,
+			meta:{
+				requiresAuth:true
+			}
 		},
 		{
 			path:"/Service",
 			component:Service,
+			meta:{
+				requiresAuth:true
+			}
 		},
 		{
 			path:"/Set",
 			component:Set,
+			meta:{
+				requiresAuth:true
+			}
 		},
         //首页子页面注册
         {
@@ -184,17 +222,20 @@ let router = new VueRouter({
 		{
 			path:"/delicious",
 			component:delicious,
+			
 		},
 
 		// 我的登录前页面
 		{
 			path:"/BeforeLogin",
 			component:BeforeLogin,
+		
 		},
 		// 公共路由
 		//登录页面
 		{
 			path:"/Login",
+			name:"Login",
 			component:Login,
 		},
 		// --------------
@@ -235,14 +276,13 @@ let router = new VueRouter({
 });
 //路由守卫
 router.beforeEach((to,from,next)=>{	
-	console.log(to)
 	if(to.meta.requiresAuth){
 		if(to.meta.requiresAuth==true){
 			if(!localStorage.getItem("userID")){
 				let params = to.params;
 				params.redirect =  to.fullPath;//原来的页面
 				next({
-						name: 'login',
+						name: 'Login',
 						params:params,
 					  });
 			}else{
