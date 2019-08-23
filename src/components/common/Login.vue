@@ -125,7 +125,7 @@
 		padding: 0.26rem 0.15rem 0;
 	}
 	#countNumber{
-		font-size: .2rem;
+		font-size: .1rem;
 		color: red;
 	}
 	#phoneNum{

@@ -1,9 +1,9 @@
 <template>
   <div class="right-box">
-            <ol class="ol-list" v-for="item in data">
+            <ol class="ol-list" v-for="(item,index) in data" :key="index">
                 <li class="box1" >
                     <p id="foryou" >{{item.classDelicious}}</p>
-					<div class="box-a" v-for="foods in item.classDeliciousAll">
+					<div class="box-a" v-for="(foods,index) in item.classDeliciousAll" :key="index">
 						<a href="javascript:;">
 							<img :src="foods.smallIconPic" >
 							<h4>{{foods.smallIconName}}</h4>

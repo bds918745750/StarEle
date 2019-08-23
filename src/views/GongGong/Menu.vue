@@ -22,8 +22,6 @@
 		
 	export default{
 		name:"Menu",
-		// props:["data","sid"]
-		//获取点击的店铺信息
 		components:{
 			"ele-Menu-MenuHead":MenuHead,
 			"ele-Menu-MenuDetails":MenuDetails,
