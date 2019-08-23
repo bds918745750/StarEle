@@ -1,7 +1,8 @@
 export default{
- get(url,cb){
-	 fetch(url).then(res=>{
-		 res.json().then(cb)
-	 })
- }	
+    // 获取数据
+    get(url,cb){
+        fetch(url).then(response=> {
+            response.json().then(cb)
+        })
+    }
 }

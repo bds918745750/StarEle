@@ -1,4 +1,3 @@
-
 <template>
 	<ele-Login></ele-Login>
 </template>
@@ -18,5 +17,5 @@ export default{
 </script>
 
 <style scoped="scoped">
-	@import"../../assets/Login.css";
+	@import "../../assets/Login.css";
 </style>

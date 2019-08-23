@@ -1,7 +1,9 @@
 <template>
 	<div class="LoginbigBox">
 		<div class="header">
+			<router-link to="/">
 			  <img src="../../assets/imgs/Login/left-36.png">
+			</router-link>
 			  <h1>登录</h1>
 			  <h3>验证码登录</h3>
 		</div>
@@ -69,7 +71,7 @@
 		padding: 0.26rem 0.15rem 0;
 	}
 	#countNumber{
-		font-size: .2rem;
+		font-size: .1rem;
 		color: red;
 	}
 </style>

@@ -40,8 +40,8 @@ export default {
     justify-content:center;
 }
 .title img{
-    width: .5rem;
-    height: .25rem;
+    width: 0.5rem;
+    height: 0.25rem;
     display: inline;
     line-height: .11rem;
     /* position: absolute;

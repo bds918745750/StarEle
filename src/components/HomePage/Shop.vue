@@ -3,7 +3,7 @@
    <div class="ShopDet" v-for="(item,key) in data.nearbyShop" :key="key" @click="HomePageShop(key)">
     <div class="ShopDet_left">
       <span>星选好店</span>
-      <img :src="item.nearbyShopyPic" />
+      <img :src="item.nearbyShopyPic"/>
     </div>
 
     <div class="ShopDet_content">
@@ -56,10 +56,10 @@ export default {
 			path:"/Menu",query:{
 				shopid:item
 			}
-		});
+		})
 		console.log(item)
 	 }
- },
+ }
  }
 </script>
 

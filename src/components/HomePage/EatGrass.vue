@@ -2,7 +2,6 @@
   <div class="plate">
     <h2>吃货种草机</h2>
     <div class="plate_one">
-     
       <router-link to="/Week" class="plate_one_right">
         <img src="../../assets/imgs/Homepage/plate/one-1.png" />
       </router-link>
@@ -30,7 +29,8 @@
 
 <script>
 export default {
-  name: "EatGrass"
+  name: "EatGrass",
+  props:["data"]
 };
 </script>
 
