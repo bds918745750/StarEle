@@ -44,7 +44,7 @@ export default {
     "ele-homepage-Footer": Footer
   },
   created() {
-    this._initPageData();
+    this._initPageData()
   },
   data(){
     return{
@@ -56,7 +56,6 @@ export default {
       HomePage.getHomePage(data => {
         console.log(data);
         this.HomeInfo= data;
-
       });
     }
   },

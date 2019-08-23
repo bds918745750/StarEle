@@ -6,14 +6,15 @@ const bascsUrl = "http://localhost:3000";
 const bascUrl = "http://39.100.63.237:8000";
 
 
-
-// 后端首页的地址
+//后端首页
 const HOMEURL = `${bascUrl}/api/index`;
-// 后端获取shoplist的接口
+
+// 后端获取商品列表的接口
 const shopList = `${bascUrl}/api/shops/shop/?shopId=`;
 
-// // 模拟获取商品数据接口
-// const shopList = `${bascsUrl}/api/shopList`;
+//后端购物车
+const SHOPCART = `http://39.100.63.237:8000/api/cart/cartlist/?userId=1`;
+
 
 //模拟获取分类页面数据接口
 const classFoods = `${bascsUrl}/api/classFoods`;
@@ -33,14 +34,13 @@ export default {
 		Api.get(`${shopList}${shopId}`, cb)
 	},
 
-
-	// 模拟商店详情shopList信息
-	// getshopList(cb) {
-	// 	Api.get(shopList, cb)
-	// },
-
 	getclassFoods(cb) {
 		Api.get(classFoods, cb)
+	},
+
+	//购物车
+	shoppingCart(cb) {
+		Api.get(SHOPCART, cb)
 	}
 
 }

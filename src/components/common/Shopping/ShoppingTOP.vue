@@ -1,19 +1,23 @@
 <template>
-  <div class="shoppingheader">
-    <div class="row" @click="shoppinGoback"><</div>
-    <h3 class="shopName">购物车</h3>
-    <div class="blank">清空</div>
-  </div>
+		<div class="shoppingheader">
+			<div class="row">
+				<router-link to="/">
+					<img src="../../../../src/assets/imgs/MyisChild/SH/1-2.png" alt="">				
+				</router-link>
+			</div>
+			<h3 class="shopName">购物车</h3>
+			<div class="blank" @click="handleClickEmpty">清空</div>
+		</div>
 </template>
 <script>
 export default {
-  name: "ShoppingTOP",
-  methods: {
-    shoppinGoback() {
-      history.back();
-    }
-  }
-};
+	name:"ShoppingTOP",
+	methods: {
+		handleClickEmpty(){
+			this.$emit('empty')
+		}
+	}
+}
 </script>
 
 <style scoped>
@@ -24,8 +28,9 @@ export default {
   height: 0.37rem;
   padding: 0.15rem 0;
 }
-.row {
-  font-size: 0.3rem;
+.row img{
+	width: 0.27rem;
+	height:0.46rem ;
 }
 .shopName {
   font-size: 0.18rem;

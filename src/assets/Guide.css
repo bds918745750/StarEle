@@ -45,7 +45,9 @@
 		margin-top: .1rem;
 		margin-right: .15rem;
 	}
-	
+	.guideHeader span{
+		font-size: .18rem;
+	}
 	.guideSlide{
 		-webkit-flex: 1;
 		overflow-y: auto;
@@ -194,10 +196,13 @@
 
 	}
 	.guideFind-contour{
-		padding: .06rem .07rem;
+		padding: 0.04rem 0rem;
 		border: 1px solid red;
 		color: red;
-		padding-bottom: .1rem;
+		/* padding-bottom: .1rem; */
+		margin-left: .45rem;
+		line-height: .1rem;
+
 	}
 	.guideFind-address{
 		margin-top: .05rem;

@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- <router-link to="/Menu"> -->
-      <ele-homepage-shop :data="data"></ele-homepage-shop>
+      <ele-homepage-shop :data="data" ></ele-homepage-shop>
     <!-- </router-link> -->
   </div>
 </template>

@@ -53,7 +53,7 @@ header{
 
 /* car */
 .car{
-	height:.6rem ;
+	/* height:.6rem ; */
 	display: flex;
 	align-items: center;
 }
@@ -63,7 +63,7 @@ header{
 	margin-right: .12rem;
 }
 .car p{
-	font-size: .15rem;
+	font-size: .13rem;
 }
 
 /* foodsMes */
@@ -79,7 +79,7 @@ header{
 }
 .shopName h5{
 	text-indent: .15rem;
-	font-size: .2rem;
+	font-size: .16rem;
 }
 .rightRow h6{
 	font-size: .25rem;
@@ -167,7 +167,7 @@ header{
 	color: red;
 	text-align: center;
 	line-height: .17rem;
-	margin-right:.3rem;
+	margin-right: .1rem;
 }
 
 /* 总计 */
