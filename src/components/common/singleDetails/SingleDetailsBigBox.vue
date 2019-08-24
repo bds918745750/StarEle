@@ -1,21 +1,19 @@
 <template>
 	<div class="SinglebigBox">
 			<div class="foodsName">
-				<h2>大碗剁椒面</h2>
+				<h2>{{data.foodName}}</h2>
 			</div>
 			
-	
 			<div class="monthTo">
-				<p>月售10份</p>
+				<p>月售{{data.foodSale}}份</p>
 			</div>
-			
-			
+		
 			<div class="singlePrice">
-				<h3><span>￥10</span><del>￥20</del></h3>
+				<h3><span>￥{{data.foodPrice}}</span><del>￥20</del></h3>
 				<div class="num">
-					<p>+</p>
-					<span>2</span>
-					<p>-</p>
+					<p @click="minus()">-</p >
+					<span>{{foodsCount}}</span>
+					<p @click="add()">+</p>
 				</div>
 			</div>
 			
@@ -26,9 +24,9 @@
 			</div>
 			
 			
-			<div class="selfshopCar">
+			<div class="selfshopCar" @click="toShopingCar()">
 				<i class="fa fa-shopping-bag"  style="font-size:.4rem"></i>
-				<span class="number">0</span>
+				<span class="number">{{foodsCount}}</span>
 				<div class="sendFee">另需配送费<span>10元</span></div>
 			</div>
 			
@@ -38,13 +36,31 @@
 <script>
 	export default {
 		name: "SingleDetailsBigBox",
-		data() {
-			return {
-	
+		props:["data"],
+		data(){
+			return{
+				foodsCount:0,
+				shopId:"",
+				foodId:"",
 			}
 		},
-	
-	}
+		methods:{
+			add(){
+				this.foodsCount++
+			},
+			minus(){
+				if(this.foodsCount>0){
+					this.foodsCount--
+				}else{
+					this.foodsCount=0
+				}
+			},
+			toShopingCar(){	
+				this.shopId=this.$route.query.shopId
+				console.log(this.shopId)
+			}
+		}
+}
 </script>
 
 <style scoped="scoped">
@@ -106,7 +122,7 @@
 	}
 	.selfshopCar .number{
 		display: block;
-		font-size: .3rem;
+		font-size: .2rem;
 		width: .3rem;
 		height: .3rem;
 		background: red;
@@ -114,15 +130,17 @@
 		border:1px solid wheat;
 		text-align: center;
 		line-height: .3rem;
-		color: #F9F9F9;
 		position: absolute;
 		left:.3rem ;
-			top:.01rem;
+		top:.01rem;
 		}
 		.sendFee{
 			font-size:.2rem;
 			line-height:.5rem ;
 			margin-left: .3rem;
+		}
+		.sendFee span{
+			font-size:.2rem;
 		}
 		.SinglebigBox{
 			padding: 0 .15rem;

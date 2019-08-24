@@ -1,131 +1,36 @@
 <template>
-	<div>
 		<div>
 			<div class="orderDishes">
 						<div class="leftNav">
-							<a href="#coldDishes">开胃凉菜</a>
-							<a href="#hotDishes">风味热菜</a>
-							<a href="#specialDishes">特色汤包</a>
-							<a href="#mustDishes">必备饮品</a>
-							<a href="#necessaryDishes">新鲜尝鲜</a>
+							<a href="#coldDishes" v-for="(item,id) in data.shopOrder " :key="id">{{item.shopFoodMenu}}</a>
 						</div>
 					
 					<div class="rightDish">
-						<div id="coldDishes">
-							<div class="dishTypeTitle">开胃凉菜</div>
+						<div id="coldDishes" v-for="(item,id) in data.shopOrder " :key="id">
+							<div class="dishTypeTitle">{{item.shopFoodMenu}}</div>
 								<!-- 路由跳转 -->
-								<router-link to="/ShopsingleDetailsping">
-									<div class="dishTypeFoods">
+									<div class="dishTypeFoods" v-for="(foods ,id) in item.shopFoodList" :key="id" @click="foodsDetails(data.shopOrder,foods.foodId)">
 										<div class="dishTypeFoodsImg">
-											<img src="../../../assets/imgs/Menu/foods1.jpg">
+											<img :src=foods.foodImg.url>
 										</div>
 										<div class="dishTypeFoodsDetails">
 											<div class="foodsName">
-												双菇蒸饺
+												{{foods.foodName}}
 											</div>
 											<div class="foodsIntrduces">
-												<p>月售7份，好评率97%</p>
-												<p> 主料：<span>面粉</span></p>
+												<p>月售{{foods.foodSale}}份，好评率97%</p>
+												<p> 主料：<span>{{foods.foodmaterialis}}</span></p>
 											</div>
 											<div class="foodsPrice">
-												<h5>￥<span>10</span></h5>
+												<h5>￥<span>{{foods.foodPrice}}</span></h5>
 												<img src="../../../assets/imgs/Menu/addpic.jpg">
 											</div>
 										</div>
 									</div>
-								</router-link>
 
 							</div>
 
-							<div id="hotDishes">
-								<div class="dishTypeTitle">风味热菜</div>
-									<div class="dishTypeFoods">
-										<div class="dishTypeFoodsImg">
-											<img src="../../../assets/imgs/Menu/foods1.jpg">
-										</div>
-										<div class="dishTypeFoodsDetails">
-											<div class="foodsName">
-												双菇蒸饺
-											</div>
-											<div class="foodsIntrduces">
-												<p>月售7份，好评率97%</p>
-												<p> 主料：<span>面粉</span></p>
-											</div>
-											<div class="foodsPrice">
-												<h5>￥<span>10</span></h5>
-												<img src="../../../assets/imgs/Menu/addpic.jpg">
-											</div>
-										</div>
-								</div>
-							</div>
-		
-		
-							<div id="#specialDishes">
-									<div class="dishTypeTitle">特色汤包</div>
-									<div class="dishTypeFoods">
-										<div class="dishTypeFoodsImg">
-											<img src="../../../assets/imgs/Menu/foods1.jpg">
-										</div>
-										<div class="dishTypeFoodsDetails">
-											<div class="foodsName">
-												双菇蒸饺
-											</div>
-											<div class="foodsIntrduces">
-												<p>月售7份，好评率97%</p>
-												<p> 主料：<span>面粉</span></p>
-											</div>
-											<div class="foodsPrice">
-												<h5>￥<span>10</span></h5>
-												<img src="../../../assets/imgs/Menu/addpic.jpg">
-											</div>
-										</div>
-									</div>
-							</div>
-		
-							<div id="#mustDishes">
-									<div class="dishTypeTitle">必备特饮</div>
-									<div class="dishTypeFoods">
-										<div class="dishTypeFoodsImg">
-											<img src="../../../assets/imgs/Menu/foods1.jpg">
-										</div>
-										<div class="dishTypeFoodsDetails">
-											<div class="foodsName">
-												双菇蒸饺
-											</div>
-											<div class="foodsIntrduces">
-												<p>月售7份，好评率97%</p>
-												<p> 主料：<span>面粉</span></p>
-											</div>
-											<div class="foodsPrice">
-												<h5>￥<span>10</span></h5>
-												<img src="../../../assets/imgs/Menu/addpic.jpg">
-											</div>
-										</div>
-									</div>
-							</div>
-						
-							<div id="#necessaryDishes">
-									<div class="dishTypeTitle">新鲜尝鲜</div>
-									<div class="dishTypeFoods">
-										<div class="dishTypeFoodsImg">
-											<img src="../../../assets/imgs/Menu/foods1.jpg">
-										</div>
-										<div class="dishTypeFoodsDetails">
-											<div class="foodsName">
-												双菇蒸饺
-											</div>
-											<div class="foodsIntrduces">
-												<p>月售7份，好评率97%</p>
-												<p> 主料：<span>面粉</span></p>
-											</div>
-											<div class="foodsPrice">
-												<h5>￥<span>10</span></h5>
-												<img src="../../../assets/imgs/Menu/addpic.jpg">
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -133,7 +38,37 @@
 
 <script>
 	export default{
-		name:"MenuBox"
+		name:"MenuBox",
+		data(){
+			return {
+				shopLists:{},
+				shopIds:""
+			}
+		},
+		props:[
+			"data"
+		],
+		
+		methods:{
+			foodsDetails(foods,key){
+				const shopId=this.$route.query.shopid
+				foods.forEach((foods)=>{
+					foods.shopFoodList.forEach((shopFoodList)=>{
+						if(shopFoodList.foodId==key){
+							this.shopIds = shopId
+							this.shopLists = shopFoodList
+						}
+					})
+				});
+				this.$router.push({
+					path:"/SingleDetails",
+					query:{
+						foods:this.shopLists,
+						shopId:this.shopIds
+					}
+				})
+			}
+		},		
 	}
 </script>
 

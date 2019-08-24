@@ -1,9 +1,10 @@
 <template>
   <nav>
-    <div class="manu" v-for="(menu,id) in data" :key="id" @click="Flag(id)">
+    <div class="manu" v-for="(nav,id) in data" :key="id" @click="Flag(id)">
       <a >
-        <img :src="'../../assets/imgs/Homepage/nav-icon/'+menu.menuPic" />
-        <span>{{menu.menuName}}</span>
+        <!-- <img :src="'../../assets/imgs/Homepage/nav-icon/'+menu.menuPic" /> -->
+        <img :src="nav.navPic"/>
+        <span>{{nav.navName}}</span>
       </a>
     </div>
   </nav>

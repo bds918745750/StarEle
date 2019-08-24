@@ -1,10 +1,10 @@
 <template>
   <div class="CaiBox">
 	  <div class="CaiLeft">
-		  <ele-homepage-classify-CaiLeft></ele-homepage-classify-CaiLeft>
+		  <ele-homepage-classify-CaiLeft v-if="deliciousClass" :data="deliciousClass"></ele-homepage-classify-CaiLeft>
 	  </div>
 	   <div class="CaiRight">
-		   <ele-homepage-classify-CaiRight></ele-homepage-classify-CaiRight>
+		   <ele-homepage-classify-CaiRight v-if="deliciousClass"  :data="deliciousClass"></ele-homepage-classify-CaiRight>
 	  </div>
   </div>
 </template>
@@ -12,6 +12,7 @@
 <script>
 	import CaiLeft from '../../components/HomePageChild/Classify/CaiLeft'
 	import CaiRight from '../../components/HomePageChild/Classify/CaiRight'
+	import HomePage from "../../apis/HomePage";
 
 
 
@@ -20,8 +21,24 @@ export default {
   components: {
     "ele-homepage-classify-CaiLeft": CaiLeft,
     "ele-homepage-classify-CaiRight": CaiRight
+  },
+  data(){
+	  return{
+		deliciousClass:[] 
+	  }	  
+  },
+  created(){
+	  this.deliciousFoods()
+  },
+  methods:{
+	  deliciousFoods(){
+		  HomePage.getclassFoods(data=>{
+			  console.log(data.deliciousClass)
+			  this.deliciousClass=data.deliciousClass
+		  })
+	  }
   }
-};
+}
 </script>
 
 <style scoped>

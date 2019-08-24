@@ -18,4 +18,8 @@
 	.selfshopCar{
 		margin-left:.15rem;
 	}
+	.sendFee span{
+		font-size: .18rem;
+	}
+		
 </style>

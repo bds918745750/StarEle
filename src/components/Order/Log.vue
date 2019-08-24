@@ -15,8 +15,4 @@ export default {
 </script>
 
 <style scoped>
-.top img{
-  width: 2rem;
-  height: 2rem;
-}
 </style>

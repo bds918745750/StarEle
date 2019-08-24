@@ -5,6 +5,11 @@
     <ele-homepage-fitness-Fshop></ele-homepage-fitness-Fshop>
     <ele-homepage-fitness-Fshop></ele-homepage-fitness-Fshop>
     <ele-homepage-fitness-Fshop></ele-homepage-fitness-Fshop>
+    <ele-homepage-fitness-Fshop></ele-homepage-fitness-Fshop>
+    <ele-homepage-fitness-Fshop></ele-homepage-fitness-Fshop>
+    <ele-homepage-fitness-Fshop></ele-homepage-fitness-Fshop>
+    <ele-homepage-fitness-Fshop></ele-homepage-fitness-Fshop>
+    <ele-homepage-fitness-Fshop></ele-homepage-fitness-Fshop>
  </div>
 </template>
 

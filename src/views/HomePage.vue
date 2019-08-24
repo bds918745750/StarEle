@@ -5,6 +5,7 @@
        <ele-homepage-Nav v-if="HomeInfo.menu" :data="HomeInfo.menu" ></ele-homepage-Nav>
       <ele-homepage-Banner v-if="HomeInfo.banner" :data="HomeInfo.banner"></ele-homepage-Banner>
       <ele-homepage-EatGrass v-if="HomeInfo.eatter" :data="HomeInfo.eatter"></ele-homepage-EatGrass>
+      <ele-homepage-EatGrass></ele-homepage-EatGrass>
       <ele-homepage-ServicePromises></ele-homepage-ServicePromises>
       <ele-homepage-FoodResearch></ele-homepage-FoodResearch>
       <ele-homepage-SelectShop v-if="HomeInfo" :data="HomeInfo"></ele-homepage-SelectShop>
@@ -44,7 +45,7 @@ export default {
     "ele-homepage-Footer": Footer
   },
   created() {
-    this._initPageData()
+    this._initPageData();
   },
   data(){
     return{
@@ -56,6 +57,7 @@ export default {
       HomePage.getHomePage(data => {
         console.log(data);
         this.HomeInfo= data;
+
       });
     }
   },

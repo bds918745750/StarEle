@@ -2,8 +2,8 @@
 <div>
    <div class="ShopDet" v-for="(item,key) in data.nearbyShop" :key="key" @click="HomePageShop(key)">
     <div class="ShopDet_left">
-      <span>星选好店</span>
-      <img :src="item.nearbyShopyPic" />
+      <span v-if="item.nearbyShopAdvtange == 1">星选好店</span>
+      <img :src="item.nearbyShopPic" />
     </div>
 
     <div class="ShopDet_content">
@@ -14,14 +14,15 @@
           <span class="count f1">| 月售:{{item.nearbyShopSale}}</span>
         </div>
         <div class="zhuanSong">
-          <span>蜂鸟专送</span>
+          <span v-if="item.nearbyShopAdvtange == 1" >蜂鸟专送</span>
+          <span v-if="item.nearbyShopAdvtange == 2" style="color:yellow;border:1px solid yellow"  >美团专送</span>
         </div>
       </div>
 
       <div class="ShopDet_down">
         <div class="ShopDet_down_left">
           <span>起送 20 |</span>
-          <span>配送 20</span>
+          <span>配送 {{item.nearbyShopTime}}</span>
         </div>
         <div class="ShopDet_down_right">
           <span class="time f1">{{item.nearbyShopTime}} 分钟 |</span>
@@ -32,7 +33,7 @@
       <div class="ShopDet_type">
         <a href="javaScript:;">
           <img src="../../assets/imgs/Homepage/Shop_logo/Shop-1.png" />
-          <span>包子</span>
+          <span>{{item.nearbyShopType}}</span>
         </a>
         <span>好吃到哭的黑椒蜜豆炒牛柳</span>
       </div>
@@ -50,16 +51,16 @@
 export default {
   name: "Shop",
   props:["data","id"],
- methods:{
-	 HomePageShop(item){
-		this.$router.push({
-			path:"/Menu",query:{
-				shopid:item
-			}
-		});
-		console.log(item)
-	 }
- },
+  methods:{
+    HomePageShop(item){
+      this.$router.push({
+        path:"/Menu",query:{
+          shopid:item+1
+        }
+      });
+      console.log(item)
+    }  
+  },
  }
 </script>
 

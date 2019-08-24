@@ -89,8 +89,5 @@ export default {
 </script>
 
 <style scoped>
-.guideNav-contour{
-	padding: .05rem .1rem;
-    color: #ffffff;
-}
+
 </style>
