@@ -1,4 +1,4 @@
-# star-ele
+# star-ele（培训毕业的代码，回头看异常羞耻）
 
 ## Project setup
 ```
